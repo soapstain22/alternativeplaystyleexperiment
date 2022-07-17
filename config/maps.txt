@@ -41,6 +41,7 @@ endmap
 
 map runtimestation
 endmap
-
+map scrungo
+endmap
 map multiz_debug
 endmap
