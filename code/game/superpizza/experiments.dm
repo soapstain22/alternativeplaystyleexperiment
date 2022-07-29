@@ -21,30 +21,104 @@
 		/mob/living/simple_animal/hostile/retaliate/frog = 1,
 		/mob/living/simple_animal/parrot = 1)
 /datum/experiment/scanning/points/chainsaw
-	name = "sharpest tool"
+	name = "The Sharpest Tool"
 	description = "i cant fucking open my fucking package. help! help! help! help! help!"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/chainsaw = 1,)
+/datum/experiment/scanning/points/coldchili
+	name = "Endothermics"
+	description = "i would like it if it was just ever so slightly colder"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/soup/coldchili = 1,)
+/datum/experiment/scanning/points/spidermeat
+	name = "Endothermics"
+	description = "i would like it if it was just ever so slightly colder"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/bread/spidermeat = 1,)
+/datum/experiment/scanning/points/xenomeat
+	name = "Endothermics"
+	description = "i would like it if it was just ever so slightly colder"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/bread/xenomeat = 1,)
+
+/datum/experiment/scanning/points/royalcheese
+	name = "Royal Cheese"
+	description = "i would like it if it was just ever so slightly colder"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/cheese/royal = 1,)
+/datum/experiment/scanning/points/chaosdonut
+	name = "chaos donut"
+	description = "good luck with this one"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/cheese/royal = 1,)
+/datum/experiment/scanning/points/edensalad
+	name = "edensalad"
+	description = "good luck with this one"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/salad/edensalad = 1,)
+/datum/experiment/scanning/points/powerburger
+	name = "empoweredburger"
+	description = "fillout"
+	required_points = 1
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_atoms = list(
+		/obj/item/food/burger/empoweredburger = 1,)
 /datum/experiment/scanning/points/pneumatic_cannon
-	name = "pneumatic"
+	name = "Pneumatics"
 	description = "im tired. cannon time."
 	required_points = 1
 	required_atoms = list(
 		/obj/item/pneumatic_cannon/ghetto = 1,)
 /datum/experiment/scanning/points/heat
-	name = "heat likers"
+	name = "Exothermal Machinery "
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
 		/obj/machinery/space_heater/improvised_chem_heater = 2,
 		/obj/machinery/space_heater = 1,)
 /datum/experiment/scanning/points/sm
-	name = "fillout"
+	name = "Supermatter"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
 		/obj/machinery/power/supermatter_crystal/shard = 1,)
+/datum/experiment/scanning/points/durathread
+	name = "Durable Thread"
+	description = "bitch you gotta make a candle"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/candle = 1,)
+/datum/experiment/scanning/points/echair
+	name = "Electrical Furniture"
+	description = "bitch you gotta make a candle"
+	required_points = 1
+	required_atoms = list(
+		/obj/structure/chair/e_chair = 1,)
+/datum/experiment/scanning/points/barrel
+	name = "barrel"
+	description = "barrel fucks"
+	required_points = 1
+	required_atoms = list(
+		/obj/structure/fermenting_barrel = 1,)
+/datum/experiment/scanning/points/snow
+	name = "snowday"
+	description = "bitch you gotta make a candle"
+	required_points = 1
+	required_atoms = list(
+		/obj/structure/fermenting_barrel = 1,)
 /datum/experiment/scanning/points/matterstudy1
 	name = "Matter study 1"
 	description = "bitch you gotta make a candle"
@@ -82,13 +156,13 @@
 	required_atoms = list(
 		/obj/item/stack/sheet/hot_ice = 1,)
 /datum/experiment/scanning/points/crystal
-	name = "fillout"
+	name = "Crystal"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/stock_parts/cell/crystal_cell = 1,)
 /datum/experiment/scanning/points/n2ocrystal
-	name = "fillout"
+	name = "n2o crystal"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
@@ -207,12 +281,20 @@
 	description = "treat them well. upgrade their shit"
 	required_points = 6
 	required_atoms = list(
-		/obj/machinery/rnd/production/protolathe/department/science = 1,
-		/obj/machinery/rnd/production/protolathe/department/engineering = 1,
-		/obj/machinery/rnd/production/techfab/department/cargo = 1,
-		/obj/machinery/rnd/production/techfab/department/medical = 1,
-		/obj/machinery/rnd/production/techfab/department/security = 1,
-		/obj/machinery/rnd/production/techfab/department/service = 1
+		/obj/machinery/microwave = 2,
+		/obj/machinery/oven = 1,
+		/obj/machinery/griddle = 2,
+		/obj/machinery/processor = 2
+	)
+	required_tier = 2
+/datum/experiment/scanning/points/machinery_tiered_scan/atmos
+	name = "Atmos Neglect Prevention Program"
+	description = "treat them well. upgrade their shit"
+	required_points = 6
+	required_atoms = list(
+		/obj/machinery/atmospherics/components/unary/thermomachine = 1,
+		/obj/machinery/atmospherics/components/binary/crystallizer = 1,
+		/obj/machinery/atmospherics/components/binary/tank_compressor = 1,
 	)
 	required_tier = 2
 /datum/experiment/scanning/points/silver
@@ -258,14 +340,14 @@
 		/obj/item/food/grown/garlic = 1,)
 
 /datum/experiment/scanning/points/diamond
-	name = "fillout"
+	name = "diamond"
 	description = "This is the fucking task!"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/stack/sheet/mineral/diamond = 1,)
 
 /datum/experiment/scanning/points/metal_hydrogen
-	name = "fillout"
+	name = "metal_hydrogen"
 	description = "This is the fucking task!, \
 		are you up to the task?"
 	required_points = 1
@@ -273,28 +355,28 @@
 		/obj/item/stack/sheet/mineral/metal_hydrogen = 1)
 
 /datum/experiment/scanning/points/zaukerite
-	name = "fillout"
+	name = "zaukerite"
 	description = "This is the fucking task!, \
 		are you up to the task?"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/stack/sheet/mineral/zaukerite = 1)
 /datum/experiment/scanning/points/fuel
-	name = "fillout"
+	name = "fuel"
 	description = "This is the fucking task!, \
 		are you up to the task?"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/fuel_pellet = 1)
 /datum/experiment/scanning/points/fuelb
-	name = "fillout"
+	name = "fuelb"
 	description = "This is the fucking task!, \
 		are you up to the task?"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/fuel_pellet/advanced = 1)
 /datum/experiment/scanning/points/fuelc
-	name = "fillout"
+	name = "fuelc"
 	description = "This is the fucking task!, \
 		are you up to the task?"
 	required_points = 1
@@ -424,30 +506,23 @@
 		/obj/item/food/salad/boiledrice = 1)
 
 /datum/experiment/scanning/points/xenobiobasic
-	name = "The Ailemns People"
-	description = "This is the fucking task!, \
-		are you up to the task?"
+	name = "The Ailen People"
+	description = "ok so slimes can be made into other shit and its completely unpredictable why or how they do this but they do. scan a slime and maybe we can get some answers
 	required_points = 1
 	required_atoms = list(
 		/mob/living/simple_animal/slime = 1)
 
 
 /datum/experiment/scanning/points/shockers
-	name = "fillout"
-	description = "fillout"
+	name = "potato technology"
+	description = "we must know how they fit the electricity into the tuber. Debunk."
 	required_points = 1
 	required_atoms = list(
-		/mob/living/simple_animal/slime = 1)//fillout
+		/obj/item/stock_parts/cell/potato = 1)//fillout
 
-/datum/techweb_node/basic_medical
-	id = "basic_medical"
-	prereq_ids = list("porn")
-	display_name = "Basic Medical Equipment"
-	description = "Basic medical tools and equipment."
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
 /datum/techweb_node/surgery
 	id = "surgery"
-	prereq_ids = list("basic_medical")
+	prereq_ids = list("porn")
 	display_name = "surgery"
 	description = "rest in peace to all the frogs that died in the line of fire by middle school science programs"
 	design_ids = list(
@@ -494,12 +569,12 @@
 		"cybernetic_stomach_tier2"
 	)
 	discount_experiments = list(/datum/experiment/scanning/points/plastics = 1000, /datum/experiment/scanning/points/zoo = 1000)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 /datum/techweb_node/bodyc
 	id = "bodyc"
 	prereq_ids = list("bodyb")
-	display_name = "fillout"
-	description = "fillout"
+	display_name = "Mister Roboto but cool"
+	description = "ok so the mr roboto crowd got mk ultrad into making this shit possible so please thank them."
 	design_ids = list(
 		"cybernetic_ears_u",
 		"cybernetic_heart_tier3",
@@ -508,11 +583,11 @@
 		"cybernetic_stomach_tier3",
 	)
 	discount_experiments = list(/datum/experiment/scanning/points/plastics = 1000, /datum/experiment/scanning/points/zoo = 1000)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 6000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7000)
 
 /datum/techweb_node/reagentholdinga
 	id = "reagentholdinga"
-	prereq_ids = list("basic_medical")
+	prereq_ids = list("porn")
 	display_name = "Basic Reagent Holding Equipment"
 	description = "Basic reagent holding"
 	design_ids = list(
@@ -521,25 +596,28 @@
 		"syringe"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
+	discount_experiments = list(/datum/experiment/ordnance/explosive/pressurebomb = 1000)
 /datum/techweb_node/reagentholdingb
 	id = "reagentholdingb"
 	prereq_ids = list("reagentholdinga")
-	display_name = "Advanced Reagent Holding Equipment"
-	discount_experiments = list(/datum/experiment/scanning/points/plastics = 1000)
+	display_name = "Reagent Holding B"
+	discount_experiments = list(/datum/experiment/scanning/points/plastics = 3000)
 	description = "i have received equity in bluespace.com. who gives a shit about this node im on to the next."
+	discount_experiments = list(/datum/experiment/ordnance/explosive/pressurebomb = 4000)
 	design_ids = list(
 		"xlarge_beaker",
 		"meta_beaker"
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 
 /datum/techweb_node/reagentholdingc
-	id = "reagentholdingb"
+	id = "reagentholdingc"
 	discount_experiments = list(/datum/experiment/scanning/points/plastics = 1500, /datum/experiment/scanning/points/teleport = 4000)
 	prereq_ids = list("reagentholdingb")
-	display_name = "bluespace.com"
-	description = "it was a bust but who gives a shit"
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	display_name = "Reagent Holding C"
+	description = "bluespace.com was a bust but who gives a shit"
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 15000)
+	discount_experiments = list(/datum/experiment/ordnance/explosive/pressurebomb = 4000, /datum/experiment/scanning/points/teleport = 4000, /datum/experiment/scanning/points/royalcheese = 4000)
 	design_ids = list("bluespacesyringe",
 		"bluespacebeaker"
 	)
@@ -547,7 +625,7 @@
 /datum/techweb_node/electricitya
 	id = "electricitya"
 	prereq_ids = list("porn")
-	display_name = "electricity level 1"
+	display_name = "Electricity A"
 	description = "never neglect your bottom dollar bitch. kiss the ring."
 	design_ids = list(
 		"basic_cell",
@@ -555,12 +633,12 @@
 		"solarcontrol",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-	discount_experiments = list(/datum/experiment/scanning/points/touchfree = 400, /datum/experiment/scanning/points/shockers = 1000, /datum/experiment/scanning/points/citrus = 300)
+	discount_experiments = list(/datum/experiment/scanning/points/shockers = 1000, /datum/experiment/scanning/points/citrus = 600, /datum/experiment/scanning/points/powerburger = 600)
 /datum/techweb_node/electricityb
 	id = "electricityb"
-	discount_experiments = list(/datum/experiment/scanning/points/touchfree = 400, /datum/experiment/scanning/points/shockers = 1000, /datum/experiment/scanning/points/citrus = 300)
-	prereq_ids = list("reagentholdingb")
-	display_name = "Electricity"
+	discount_experiments = list(/datum/experiment/scanning/points/touchfree = 400, /datum/experiment/scanning/points/shockers = 1000, /datum/experiment/scanning/points/citrus = 300, /datum/experiment/scanning/points/powerburger = 500)
+	prereq_ids = list("electricitya")
+	display_name = "Electricity B"
 	description = "the exploits of electromagnetism"
 	design_ids = list(
 		"high_cell",
@@ -572,35 +650,34 @@
 		"turbine_part_rotor",
 		"turbine_part_stator",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7000)
 
 /datum/techweb_node/electricityc
 	id = "electricityc"
-	discount_experiments = list( /datum/experiment/scanning/points/teleport = 6000, /datum/experiment/scanning/points/plastics = 1000)
-	prereq_ids = list("reagentholdingb")
+	prereq_ids = list("electricityb")
 	display_name = "Electricity c"
-	description = "Electricity "
+	description = "Electricity"
 	design_ids = list(
 		"super_cell",
 		"recharger"
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-	discount_experiments = list(/datum/experiment/scanning/points/touchfree = 400, /datum/experiment/scanning/points/shockers = 1000, /datum/experiment/scanning/points/citrus = 300)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 12000)
+	discount_experiments = list(/datum/experiment/scanning/points/touchfree = 400, /datum/experiment/scanning/points/shockers = 1000, /datum/experiment/scanning/points/citrus = 300, /datum/experiment/scanning/points/diamond = 1000, /datum/experiment/scanning/points/crystal = 2000)
 /datum/techweb_node/brped
 	id = "brped"
-	discount_experiments = list(/datum/experiment/scanning/points/touchfree = 1000, /datum/experiment/scanning/points/teleport = 1000)
+	discount_experiments = list(/datum/experiment/scanning/points/touchfree = 1000, /datum/experiment/scanning/points/teleport = 1000, /datum/experiment/scanning/points/machinery_tiered_scan/atmos = 1000, /datum/experiment/scanning/points/machinery_tiered_scan/chef = 1000)
 	prereq_ids = list("reagentholdingb","electricityb","manip2",)
-	display_name = "brped"
-	description = "fillout"
+	display_name = "bs_rped"
+	description = "wateva"
 	design_ids = list(
 		"bs_rped"
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 /datum/techweb_node/engie
 	id = "engie"
 	discount_experiments = list(/datum/experiment/scanning/points/touchfree = 1000, /datum/experiment/scanning/points/teleport = 1000, /datum/experiment/scanning/points/pneumatic_cannon = 300)
 	prereq_ids = list("bin","laser","manip","scanning","capacitor")
-	display_name = "brped"
+	display_name = "Engineering"
 	description = "fillout"
 	design_ids = list(
 		"welding_goggles",
@@ -646,7 +723,6 @@
 /datum/techweb_node/plumbing
 	id = "plumbing"
 	prereq_ids = list("reagentholdinga")
-	required_experiments = list(/datum/experiment/scanning/points/grillin)
 	discount_experiments = list(/datum/experiment/scanning/points/gold = 1000, /datum/experiment/scanning/points/pneumatic_cannon = 300, /datum/experiment/scanning/points/matterstudy1 = 200, /datum/experiment/scanning/points/matterstudy2 = 300, /datum/experiment/scanning/points/matterstudy3 = 500)
 	display_name = "plumbing"
 	description = "ok so tubes. bleep bloop blop. "
@@ -658,7 +734,6 @@
 /datum/techweb_node/plumbing2
 	id = "plumbing2"
 	prereq_ids = list("plumbing")
-	required_experiments = list(/datum/experiment/scanning/points/grillin)
 	display_name = "piping"
 	description = "pipes too!"
 	design_ids = list(
@@ -668,17 +743,19 @@
 /datum/techweb_node/manip
 	id = "manip"
 	prereq_ids = list("porn")
-	display_name = "manip"
+	display_name = "manipulators and shit version 1"
 	description = "fillout"
 	design_ids = list(
 		"micro_mani",
 		"autolathe",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
+	discount_experiments = list(/datum/experiment/scanning/points/shockers = 1000, /datum/experiment/scanning/points/citrus = 600, /datum/experiment/scanning/points/powerburger = 600)
+
 /datum/techweb_node/manip1
 	id = "manip1"
 	prereq_ids = list("manip")
-	display_name = "manippleators 2!"
+	display_name = "manipulators and shit version 2"
 	description = "servos that will spinkick your tits off"
 	design_ids = list(
 		"nano_mani",
@@ -690,7 +767,7 @@
 /datum/techweb_node/manip2
 	id = "manip2"
 	prereq_ids = list("manip1")
-	display_name = "manip2"
+	display_name = "manipulators and shit version 3"
 	description = "fillout"
 	design_ids = list(
 		"pico_mani",
@@ -699,19 +776,21 @@
 		"tank_compressor"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+
 /datum/techweb_node/manip3
 	id = "manip3"
 	prereq_ids = list("manip2")
-	display_name = "manip3"
+	display_name = "manipulators and shit version 4"
 	description = "fillout"
 	design_ids = list(
 		"femto_mani",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	discount_experiments = list(/datum/experiment/scanning/points/process = 1000, /datum/experiment/scanning/points/machinery_tiered_scan/atmos = 1000)
 /datum/techweb_node/laser
 	id = "laser"
 	prereq_ids = list("porn")
-	display_name = "fillout"
+	display_name = "Laser 1"
 	description = "fillout"
 	design_ids = list(
 		"basic_micro_laser",
@@ -722,7 +801,7 @@
 /datum/techweb_node/laser1
 	id = "laser1"
 	prereq_ids = list("laser")
-	display_name = "fillout"
+	display_name = "Laser 2"
 	description = "fillout"
 	design_ids = list(
 		"high_micro_laser",
@@ -734,18 +813,17 @@
 /datum/techweb_node/laser2
 	id = "laser2"
 	prereq_ids = list("laser1")
-	display_name = "fillout"
+	display_name = "Laser 3"
 	description = "fillout"
 	design_ids = list(
 		"ultra_micro_laser",
-
 		"emitter"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 /datum/techweb_node/laser3
 	id = "laser3"
 	prereq_ids = list("laser2")
-	display_name = "fillout"
+	display_name = "Laser 4"
 	description = "fillout"
 	design_ids = list(
 		"quadultra_micro_laser",
@@ -756,17 +834,16 @@
 /datum/techweb_node/bin
 	id = "bin"
 	prereq_ids = list("porn")
-	display_name = "fillout"
+	display_name = "Bin 1"
 	description = "fillout"
 	design_ids = list(
 		"basic_matter_bin",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
-	discount_experiments = list(/datum/experiment/scanning/points/silver = 1000, /datum/experiment/ordnance/explosive/lowyieldbomb = 1000)
 /datum/techweb_node/bin1
 	id = "bin1"
 	prereq_ids = list("bin")
-	display_name = "fillout"
+	display_name = "Bin 2"
 	description = "fillout"
 	design_ids = list(
 		"adv_matter_bin",
@@ -776,7 +853,7 @@
 /datum/techweb_node/bin2
 	id = "bin2"
 	prereq_ids = list("bin1")
-	display_name = "fillout"
+	display_name = "Bin 3"
 	description = "fillout"
 	design_ids = list(
 		"super_matter_bin",
@@ -785,7 +862,7 @@
 /datum/techweb_node/bin3
 	id = "bin3"
 	prereq_ids = list("bin2")
-	display_name = "fillout"
+	display_name = "Bin 4"
 	description = "fillout"
 	design_ids = list(
 		"bluespace_matter_bin",
@@ -794,16 +871,17 @@
 /datum/techweb_node/scanning
 	id = "scanning"
 	prereq_ids = list("porn")
-	display_name = "fillout"
+	display_name = "Scanning 1"
 	description = "fillout"
 	design_ids = list(
 		"basic_scanning",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	discount_experiments = list(/datum/experiment/ordnance/explosive/lowyieldbomb = 500, /datum/experiment/ordnance/explosive/highyieldbomb = 500, /datum/experiment/ordnance/explosive/pressurebomb = 500, /datum/experiment/ordnance/explosive/nobliumbomb = 500, /datum/experiment/ordnance/explosive/hydrogenbomb = 500)
 /datum/techweb_node/scanning1
 	id = "scanning1"
 	prereq_ids = list("scanning")
-	display_name = "fillout"
+	display_name = "Scanning 2"
 	description = "fillout"
 	design_ids = list(
 		"adv_scanning",
@@ -812,11 +890,13 @@
 		"implant_chem",
 		"implant_tracking",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	discount_experiments = list(/datum/experiment/ordnance/explosive/lowyieldbomb = 700, /datum/experiment/ordnance/explosive/highyieldbomb = 700, /datum/experiment/ordnance/explosive/pressurebomb = 700, /datum/experiment/ordnance/explosive/nobliumbomb = 700, /datum/experiment/ordnance/explosive/hydrogenbomb = 700)
+
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
 /datum/techweb_node/scanning2
 	id = "scanning2"
 	prereq_ids = list("scanning1")
-	display_name = "fillout"
+	display_name = "Scanning 3"
 	description = "fillout"
 	design_ids = list(
 		"triphasic_scanning",
@@ -839,20 +919,23 @@
 		"s_transmitter",
 		"s_treatment",
 	)
+	discount_experiments = list(/datum/experiment/ordnance/explosive/lowyieldbomb = 1000, /datum/experiment/ordnance/explosive/highyieldbomb = 1000, /datum/experiment/ordnance/explosive/pressurebomb = 1000, /datum/experiment/ordnance/explosive/nobliumbomb = 1000, /datum/experiment/ordnance/explosive/hydrogenbomb = 1000)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 /datum/techweb_node/scanning3
 	id = "scanning3"
 	prereq_ids = list("scanning2")
-	display_name = "fillout"
+	display_name = "Scanning 4"
 	description = "fillout"
 	design_ids = list(
 		"phasic_scanning",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	discount_experiments = list(/datum/experiment/ordnance/explosive/lowyieldbomb = 1000, /datum/experiment/ordnance/explosive/highyieldbomb = 1000, /datum/experiment/ordnance/explosive/pressurebomb = 1000, /datum/experiment/ordnance/explosive/nobliumbomb = 1000, /datum/experiment/ordnance/explosive/hydrogenbomb = 1000)
+
 /datum/techweb_node/capacitor
 	id = "capacitor"
 	prereq_ids = list("porn")
-	display_name = "fillout"
+	display_name = "Capacitor 1"
 	description = "fillout"
 	design_ids = list(
 		"basic_capacitor",
@@ -861,7 +944,7 @@
 /datum/techweb_node/capacitor1
 	id = "capacitor1"
 	prereq_ids = list("capacitor")
-	display_name = "fillout"
+	display_name = "Capacitor 2"
 	description = "fillout"
 	design_ids = list(
 		"adv_capacitor",
@@ -876,7 +959,7 @@
 /datum/techweb_node/capacitor2
 	id = "capacitor2"
 	prereq_ids = list("capacitor1")
-	display_name = "fillout"
+	display_name = "Capacitor 3"
 	description = "fillout"
 	design_ids = list(
 		"super_capacitor",
@@ -888,7 +971,7 @@
 /datum/techweb_node/capacitor3
 	id = "capacitor3"
 	prereq_ids = list("capacitor2")
-	display_name = "fillout"
+	display_name = "Capacitor 4"
 	description = "fillout"
 	design_ids = list(
 		"quadratic_capacitor"
@@ -898,7 +981,7 @@
 /datum/techweb_node/digging1
 	id = "digging1"
 	prereq_ids = list("digging")
-	display_name = "fillout"
+	display_name = "Digging"
 	description = "fillout"
 	design_ids = list(
 		"drill",
@@ -907,18 +990,17 @@
 /datum/techweb_node/chem
 	id = "chem"
 	prereq_ids = list("porn")
-	display_name = "fillout"
+	display_name = "Chemistry 1"
 	description = "fillout"
-	design_ids = list(
-		"chem_dispenser",
-		"chem_master",
-)
 	discount_experiments = list(/datum/experiment/scanning/points/matterstudy1 = 200, /datum/experiment/scanning/points/matterstudy2 = 300, /datum/experiment/scanning/points/matterstudy3 = 500)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3500)
+	design_ids = list(
+		"chem_dispenser",
+		"chem_master",)
 /datum/techweb_node/chem2
 	id = "chem2"
 	prereq_ids = list("chem")
-	display_name = "fillout"
+	display_name = "Chemistry 2"
 	description = "fillout"
 	design_ids = list(
 		"chem_mass_spec",
@@ -929,8 +1011,8 @@
 /datum/techweb_node/cargo
 	id = "cargo"
 	prereq_ids = list("porn")
-	display_name = "cargus."
-	description = "we like it."
+	display_name = "Cargo"
+	description = "we like MOVING FUCKING BOXES!!!!!!!!! I AM SHITTING MYSELF!!!!!!!!!!"
 	design_ids = list(
 		"cargo",
 		"cargorequest",
@@ -941,8 +1023,8 @@
 /datum/techweb_node/broken
 	id = "broken"
 	prereq_ids = list("porn")
-	display_name = "i fucking broke it."
-	description = "and now i gotta fix it"
+	display_name = "Object Parts"
+	description = "i fucking broke it. and now i gotta fix it"
 	design_ids = list(
 		"airlock_board",
 		"airalarm_electronics",
@@ -953,10 +1035,11 @@
 
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	discount_experiments = list(/datum/experiment/scanning/points/matterstudy1 = 200)
 /datum/techweb_node/broken2
 	id = "broken2"
 	prereq_ids = list("broken")
-	display_name = "i fucking fix it."
+	display_name = "RCD Upgrades"
 	description = "and now i gotta fix it BETTER"
 	design_ids = list(
 		"rcd_upgrade_frames",
@@ -977,7 +1060,7 @@
 /datum/techweb_node/plant
 	id = "plant"
 	prereq_ids = list("porn")
-	display_name = "fillout"
+	display_name = "Plants 1"
 	description = "fillout"
 	design_ids = list(
 		"cultivator",
@@ -990,7 +1073,7 @@
 /datum/techweb_node/plant1
 	id = "plant1"
 	prereq_ids = list("plant")
-	display_name = "fillout"
+	display_name = "Plants 2"
 	description = "fillout"
 	design_ids = list(
 		"hydro_tray",
@@ -1003,7 +1086,7 @@
 /datum/techweb_node/plant2
 	id = "plant2"
 	prereq_ids = list("plant1")
-	display_name = "fillout"
+	display_name = "Plants 3"
 	description = "fillout"
 	design_ids = list(
 		"flora_gun",
@@ -1014,20 +1097,18 @@
 /datum/techweb_node/heat
 	id = "heat"
 	prereq_ids = list("laser2")
-	display_name = "fillout"
+	display_name = "Heat 1"
 	description = "fillout"
 	design_ids = list(
 		"griddle",
 		"oven",
 	)
 	discount_experiments = list(/datum/experiment/scanning/points/diamond = 1000, /datum/experiment/scanning/points/grillin = 300)
-
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
 /datum/techweb_node/heat1
 	id = "heat1"
 	prereq_ids = list("heat")
-	display_name = "fillout"
+	display_name = "Heat 2"
 	description = "fillout"
 	design_ids = list(
 		"pepperspray",
@@ -1035,52 +1116,56 @@
 		"pyro_grenade",
 	)
 	discount_experiments = list(/datum/experiment/scanning/points/diamond = 1000, /datum/experiment/scanning/points/grillin = 300, /datum/experiment/scanning/points/hotice = 400, /datum/experiment/ordnance/explosive/lowyieldbomb = 200, /datum/experiment/ordnance/explosive/highyieldbomb = 300)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
 /datum/techweb_node/heat2
 	id = "heat2"
 	prereq_ids = list("heat1")
-	display_name = "fillout"
+	display_name = "Heat 3"
 	description = "fillout"
 	design_ids = list(
 		"exwelder",
 	)
 	discount_experiments = list(/datum/experiment/scanning/points/machinery_tiered_scan/chef = 200, /datum/experiment/scanning/points/fuel = 200, /datum/experiment/scanning/points/fuelb = 200, /datum/experiment/scanning/points/grillin = 300)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
 /datum/techweb_node/cold
 	id = "cold"
 	prereq_ids = list("capacitor1")
-	display_name = "fillout"
-	description = "fillout"
+	display_name = "Cold 1"
+	description = "ok so we get something cold and figure out why and how it works. then we BLOW UP and DIE"
 	design_ids = list(
 		"smartfridge",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
+	discount_experiments = list(/datum/experiment/ordnance/gaseous/nitrous_oxide = 1000, /datum/experiment/scanning/points/coldchili = 1000, /datum/experiment/scanning/points/machinery_tiered_scan/atmos = 1000)
+
 /datum/techweb_node/cold1
 	id = "cold1"
 	prereq_ids = list("cold")
-	display_name = "fillout"
+	display_name = "Cold 2"
 	description = "fillout"
 	design_ids = list(
 		"stasis",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
+	discount_experiments = list(/datum/experiment/ordnance/gaseous/nitrous_oxide = 1000, /datum/experiment/scanning/points/coldchili = 1000, /datum/experiment/scanning/points/machinery_tiered_scan/atmos = 1000)
 
 /datum/techweb_node/cold2
 	id = "cold2"
 	prereq_ids = list("cold1")
-	display_name = "fillout"
+	display_name = "Cold 3"
 	description = "fillout"
 	design_ids = list(
 		"cryotube",
 		"temp_gun",
 		"c38_iceblox",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
+	discount_experiments = list(/datum/experiment/ordnance/gaseous/nitrous_oxide = 1000, /datum/experiment/scanning/points/coldchili = 1000, /datum/experiment/scanning/points/machinery_tiered_scan/atmos = 1000)
 
 /datum/techweb_node/holo
 	id = "holo"
 	prereq_ids = list("laser")
-	display_name = "fillout"
+	display_name = "Holography"
 	description = "fillout"
 	design_ids = list(
 		"holosign",
@@ -1106,7 +1191,7 @@
 /datum/techweb_node/service
 	id = "service"
 	prereq_ids = list("reagentholdinga")
-	display_name = "fillout"
+	display_name = "Service"
 	description = "fillout"
 	design_ids = list(
 		"restaurant_portal",
@@ -1118,7 +1203,7 @@
 /datum/techweb_node/plastic
 	id = "plastic"
 	prereq_ids = list("porn")
-	display_name = "fillout"
+	display_name = "Plastic"
 	description = "fillout"
 	design_ids = list(
 		"plastic_fork",
@@ -1133,7 +1218,7 @@
 /datum/techweb_node/material1
 	id = "material1"
 	prereq_ids = list("porn")
-	display_name = "materials"
+	display_name = "Materials 1"
 	description = "hell yea it purple."
 	design_ids = list(
 		"plasmaglass",
@@ -1143,14 +1228,95 @@
 	discount_experiments = list(/datum/experiment/scanning/points/diamond = 1000, /datum/experiment/scanning/points/metal_hydrogen = 1000, /datum/experiment/scanning/points/zaukerite = 1000)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7000)
 /datum/techweb_node/material2
-	id = "material1"
-	prereq_ids = list("porn")
-	display_name = "materials"
+	id = "material2"
+	prereq_ids = list("material1")
+	display_name = "Materials 2"
 	description = "hell yea it tit."
 	design_ids = list(
 		"titaniumglass",
 		"plastitaniumglass",
 		"plastitanium",
+	)
+	discount_experiments = list(/datum/experiment/scanning/points/diamond = 1000, /datum/experiment/scanning/points/metal_hydrogen = 1000, /datum/experiment/scanning/points/zaukerite = 1000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7000)
+/datum/techweb_node/circuit1
+	id = "circuit1"
+	prereq_ids = list("porn")
+	display_name = "circuit1"
+	description = "hell yea"
+	design_ids = list(
+		"circuit_multitool",
+		"comp_access_checker",
+		"comp_arithmetic",
+		"comp_binary_convert",
+		"comp_clock",
+		"comp_comparison",
+		"comp_concat",
+		"comp_concat_list",
+		"comp_decimal_convert",
+		"comp_delay",
+		"comp_direction",
+		"comp_element_find",
+		"comp_filter_list",
+		"comp_foreach",
+		"comp_format",
+		"comp_format_assoc",
+		"comp_get_column",
+		"comp_gps",
+		"comp_health",
+		"comp_hear",
+		"comp_id_access_reader",
+		"comp_id_getter",
+		"comp_id_info_reader",
+		"comp_index",
+		"comp_index_assoc",
+		"comp_index_table",
+		"comp_laserpointer",
+		"comp_length",
+		"comp_light",
+		"comp_list_add",
+		"comp_list_assoc_literal",
+		"comp_list_clear",
+		"comp_list_literal",
+		"comp_list_remove",
+		"comp_logic",
+		"comp_matscanner",
+		"comp_mmi",
+		"comp_module",
+		"comp_multiplexer",
+		"comp_not",
+		"comp_ntnet_receive",
+		"comp_ntnet_send",
+		"comp_pinpointer",
+		"comp_pressuresensor",
+		"comp_printer",
+		"comp_radio",
+		"comp_random",
+		"comp_reagents",
+		"comp_router",
+		"comp_select_query",
+		"comp_self",
+		"comp_set_variable_trigger",
+		"comp_soundemitter",
+		"comp_species",
+		"comp_speech",
+		"comp_speech",
+		"comp_split",
+		"comp_string_contains",
+		"comp_tempsensor",
+		"comp_textcase",
+		"comp_timepiece",
+		"comp_tonumber",
+		"comp_tostring",
+		"comp_trigonometry",
+		"comp_typecast",
+		"comp_typecheck",
+		"comp_view_sensor",
+		"compact_remote_shell",
+		"component_printer",
+		"integrated_circuit",
+		"module_duplicator",
+		"usb_cable",
 	)
 	discount_experiments = list(/datum/experiment/scanning/points/diamond = 1000, /datum/experiment/scanning/points/metal_hydrogen = 1000, /datum/experiment/scanning/points/zaukerite = 1000)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7000)
