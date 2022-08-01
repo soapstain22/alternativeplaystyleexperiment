@@ -7,6 +7,469 @@
 //		"fillout"
 //	)
 //  research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+//*********cooking*********
+//easy
+
+//medium
+
+//hard
+
+//master
+
+//*********botany*********
+//easy
+
+//medium
+
+//hard
+
+//master
+
+//*********cytology*********
+//easy
+
+//medium
+
+//hard
+
+//master
+
+//*********construction*********
+//easy
+
+//medium
+/datum/experiment/scanning/points/chainsaw
+	name = "The Sharpest Tool"
+	description = "i cant fucking open my fucking package. help! help! help! help! help!"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/chainsaw = 1,)
+//hard
+
+//master
+
+//*********chemistry*********
+//easy
+/datum/experiment/scanning/points/matterstudy1
+	name = "Matter study 1"
+	description = "bitch you gotta make a candle"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/candle = 1,)
+/datum/experiment/scanning/points/matterstudy2
+	name = "Matter study 2"
+	description = "bitch you gotta make soap"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/soap/homemade = 1,)
+/datum/experiment/scanning/points/matterstudy3
+	name = "Matter study 3"
+	description = "bitch you gotta make meat"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/meat/slab/synthmeat = 1,)
+//medium
+
+//hard
+
+//master
+
+//*********genetics*********
+//easy
+/datum/experiment/scanning/points/FierySweat
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Mute
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Unintelligible
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Illiterate
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Deafness
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Blindness
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Nervousness
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Tourette
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Coughing
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Epilepsy
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/NearSightness
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+//medium
+/datum/experiment/scanning/points/Telekinesis
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/TemperatureAdaptation
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/PressureAdaptation
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/ThermalVision
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Chameleon
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Dwarfism
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Glowy
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/VoidMagnet
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Telepathy
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Insulated
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/TranscendentOlfaction
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Geladikinesis
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cryokinesis
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Antenna
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Gigantism
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Autonomy
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/TongueSpike
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Stimmed
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/WebbingProduction
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+//hard
+/datum/experiment/scanning/points/ChemSpike
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/ShockTouch
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/AntiGlow
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Hulk
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+//master
+
+//*********atmos*********
+//easy
+/datum/experiment/scanning/points/ammonia
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/stack/ammonia_crystals = 1,)
+/datum/experiment/scanning/points/hotice
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/stack/sheet/hot_ice = 1,)
+
+/datum/experiment/scanning/points/n2ocrystal
+	name = "n2o crystal"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/grenade/gas_crystal/nitrous_oxide_crystal = 1,)
+/datum/experiment/scanning/points/nitrium
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/nitrium_crystal = 1,)
+
+//medium
+/datum/experiment/scanning/points/crystal
+	name = "Crystal"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/stock_parts/cell/crystal_cell = 1,)
+/datum/experiment/scanning/points/hypernob
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/hypernoblium_crystal = 1,)
+//hard
+
+//master
+
+//*********xenobio*********
+//easy
+/datum/experiment/scanning/points/GreySlime //=250
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/OrangeSlime //=250
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/MetalSlime //=250
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/PurpleSlime //=250
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/BlueSlime //=250
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+//medium
+/datum/experiment/scanning/points/SilverSlime //=500
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/DarkBlueSlime //=500
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/YellowSlime //=500
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/DarkPurpleSlime //=500
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/GoldSlime //=500
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/PinkSlime //=500
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/GreenSlime //=500
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/RedSlime //=500
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+//hard
+/datum/experiment/scanning/points/AdamantineSlime //=1000
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/PyriteSlime //=1000
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/LightPinkSlime //=1000
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/CeruleanSlime //=1000
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/BlackSlime //=1000
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/SepiaSlime //=1000
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/OilSlime //=1000
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/BluespaceSlime //=1000
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+//master
+
+//*********cargo*********
+//easy
+
+//medium
+
+//hard
+
+//master
+
 /datum/experiment/scanning/points/zoo
 	name = "The Zoo"
 	description = "i just actually like animals. please make them so i can squirm around in my seat."
@@ -20,12 +483,7 @@
 		/mob/living/basic/cow = 1,
 		/mob/living/simple_animal/hostile/retaliate/frog = 1,
 		/mob/living/simple_animal/parrot = 1)
-/datum/experiment/scanning/points/chainsaw
-	name = "The Sharpest Tool"
-	description = "i cant fucking open my fucking package. help! help! help! help! help!"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/chainsaw = 1,)
+
 /datum/experiment/scanning/points/coldchili
 	name = "Endothermics"
 	description = "i would like it if it was just ever so slightly colder"
@@ -113,72 +571,15 @@
 	required_points = 1
 	required_atoms = list(
 		/obj/structure/fermenting_barrel = 1,)
-/datum/experiment/scanning/points/snow
-	name = "snowday"
-	description = "bitch you gotta make a candle"
-	required_points = 1
-	required_atoms = list(
-		/obj/structure/fermenting_barrel = 1,)
-/datum/experiment/scanning/points/matterstudy1
-	name = "Matter study 1"
-	description = "bitch you gotta make a candle"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/candle = 1,)
-/datum/experiment/scanning/points/matterstudy2
-	name = "Matter study 2"
-	description = "bitch you gotta make soap"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/soap/homemade = 1,)
-/datum/experiment/scanning/points/matterstudy3
-	name = "Matter study 3"
-	description = "bitch you gotta make meat"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/food/meat/slab/synthmeat = 1,)
+
+
 /datum/experiment/scanning/points/protonitrate
 	name = "fillout"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/grenade/gas_crystal/proto_nitrate_crystal = 1,)
-/datum/experiment/scanning/points/ammonia
-	name = "fillout"
-	description = "fillout"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/stack/ammonia_crystals = 1,)
-/datum/experiment/scanning/points/hotice
-	name = "fillout"
-	description = "fillout"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/stack/sheet/hot_ice = 1,)
-/datum/experiment/scanning/points/crystal
-	name = "Crystal"
-	description = "fillout"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/stock_parts/cell/crystal_cell = 1,)
-/datum/experiment/scanning/points/n2ocrystal
-	name = "n2o crystal"
-	description = "fillout"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/grenade/gas_crystal/nitrous_oxide_crystal = 1,)
-/datum/experiment/scanning/points/nitrium
-	name = "fillout"
-	description = "fillout"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/nitrium_crystal = 1,)
-/datum/experiment/scanning/points/hypernob
-	name = "fillout"
-	description = "fillout"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/hypernoblium_crystal = 1,)
+
 /datum/experiment/scanning/points/slime/hard
 	name = "Challenging Slime Survey"
 	description = "Another station has challenged your research team to collect several challenging slime cores, \
