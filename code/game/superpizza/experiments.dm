@@ -9,13 +9,137 @@
 //  research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 //*********cooking*********
 //easy
+/datum/experiment/scanning/points/Baguette
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/TofuBurger
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 
 //medium
+/datum/experiment/scanning/points/HardwareCake
+	name = "chaos donut"
+	description = "good luck with this one"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/cheese/royal = 1,)
+/datum/experiment/scanning/points/powerburger
+	name = "empoweredburger"
+	description = "fillout"
+	required_points = 1
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_atoms = list(
+		/obj/item/food/burger/empoweredburger = 1,)
+/datum/experiment/scanning/points/FriedChicken
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/fillout
+	name = "fillout"
+	description = "fillout"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 
 //hard
-
+/datum/experiment/scanning/points/royalcheese
+	name = "Royal Cheese"
+	description = "i would like it if it was just ever so slightly colder"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/cheese/royal = 1,)
 //master
-
+/datum/experiment/scanning/points/edensalad
+	name = "edensalad"
+	description = "good luck with this one"
+	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
+	required_points = 1
+	required_atoms = list(
+		/obj/item/food/salad/edensalad = 1,)
 //*********botany*********
 //easy
 
@@ -27,12 +151,121 @@
 
 //*********cytology*********
 //easy
+/datum/experiment/scanning/points/Mouse
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Chicken
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cat
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+
+
+/datum/experiment/scanning/points/Bear
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Snake
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cockroach 
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 
 //medium
-
+/datum/experiment/scanning/points/Frog
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Carp
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Shark
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Corgi
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 //hard
+/datum/experiment/scanning/points/BlobSpore
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Blobbernaut
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/GelatinousCube
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/SholeanGrapes
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 
+/datum/experiment/scanning/points/QueenBee
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/MegaArachnid
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 //master
+/datum/experiment/scanning/points/VatBeast
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Leaper
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 
 //*********construction*********
 //easy
@@ -286,49 +519,97 @@
 
 //*********atmos*********
 //easy
-/datum/experiment/scanning/points/ammonia
-	name = "fillout"
-	description = "fillout"
+/datum/experiment/scanning/points/fuel
+	name = "fuel"
+	description = "This is the fucking task!, \
+		are you up to the task?"
 	required_points = 1
 	required_atoms = list(
-		/obj/item/stack/ammonia_crystals = 1,)
-/datum/experiment/scanning/points/hotice
-	name = "fillout"
-	description = "fillout"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/stack/sheet/hot_ice = 1,)
+		/obj/item/fuel_pellet = 1)
 
-/datum/experiment/scanning/points/n2ocrystal
-	name = "n2o crystal"
-	description = "fillout"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/grenade/gas_crystal/nitrous_oxide_crystal = 1,)
-/datum/experiment/scanning/points/nitrium
+/datum/experiment/scanning/points/AmmoniaCrystal
 	name = "fillout"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
-		/obj/item/nitrium_crystal = 1,)
-
+		fillout = 1,)
+/datum/experiment/scanning/points/PlasmaSheet
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 //medium
-/datum/experiment/scanning/points/crystal
-	name = "Crystal"
-	description = "fillout"
+/datum/experiment/scanning/points/fuelb
+	name = "fuelb"
+	description = "This is the fucking task!, \
+		are you up to the task?"
 	required_points = 1
 	required_atoms = list(
-		/obj/item/stock_parts/cell/crystal_cell = 1,)
-/datum/experiment/scanning/points/hypernob
+		/obj/item/fuel_pellet/advanced = 1)
+/datum/experiment/scanning/points/MetallicHydrogen
 	name = "fillout"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
-		/obj/item/hypernoblium_crystal = 1,)
+		fillout = 1,)
+/datum/experiment/scanning/points/HyperNobliumCrystal
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/HealiumCrystal
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/ProtoNitrateCrystal
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/HotIce
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 //hard
-
+/datum/experiment/scanning/points/fuelc
+	name = "fuelc"
+	description = "This is the fucking task!, \
+		are you up to the task?"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/fuel_pellet/exotic = 1)
+/datum/experiment/scanning/points/CrystalCell
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Diamond
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Zaukerite
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 //master
-
+/datum/experiment/scanning/points/SupermatterShard
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 //*********xenobio*********
 //easy
 /datum/experiment/scanning/points/GreySlime //=250
@@ -506,34 +787,7 @@
 	required_atoms = list(
 		/obj/item/food/bread/xenomeat = 1,)
 
-/datum/experiment/scanning/points/royalcheese
-	name = "Royal Cheese"
-	description = "i would like it if it was just ever so slightly colder"
-	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
-	required_points = 1
-	required_atoms = list(
-		/obj/item/food/cheese/royal = 1,)
-/datum/experiment/scanning/points/chaosdonut
-	name = "chaos donut"
-	description = "good luck with this one"
-	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
-	required_points = 1
-	required_atoms = list(
-		/obj/item/food/cheese/royal = 1,)
-/datum/experiment/scanning/points/edensalad
-	name = "edensalad"
-	description = "good luck with this one"
-	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
-	required_points = 1
-	required_atoms = list(
-		/obj/item/food/salad/edensalad = 1,)
-/datum/experiment/scanning/points/powerburger
-	name = "empoweredburger"
-	description = "fillout"
-	required_points = 1
-	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
-	required_atoms = list(
-		/obj/item/food/burger/empoweredburger = 1,)
+
 /datum/experiment/scanning/points/pneumatic_cannon
 	name = "Pneumatics"
 	description = "im tired. cannon time."
@@ -762,35 +1016,7 @@
 	required_points = 1
 	required_atoms = list(
 		/obj/item/stack/sheet/mineral/zaukerite = 1)
-/datum/experiment/scanning/points/fuel
-	name = "fuel"
-	description = "This is the fucking task!, \
-		are you up to the task?"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/fuel_pellet = 1)
-/datum/experiment/scanning/points/fuelb
-	name = "fuelb"
-	description = "This is the fucking task!, \
-		are you up to the task?"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/fuel_pellet/advanced = 1)
-/datum/experiment/scanning/points/fuelc
-	name = "fuelc"
-	description = "This is the fucking task!, \
-		are you up to the task?"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/fuel_pellet/exotic = 1)
 
-/datum/experiment/scanning/points/queen_bee
-	name = "fillout"
-	description = "This is the fucking task!, \
-		are you up to the task?"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/queen_bee = 1,)
 
 /datum/experiment/scanning/points/plastics
 	name = "fillout"
