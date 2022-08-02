@@ -176,21 +176,21 @@
 		/obj/item/food/soup/zurek = 1,)
 
 //hard
-/datum/experiment/scanning/points/superbiteburger // = 1000,
+/datum/experiment/scanning/points/superbiteburger // = 700,
 	name = "Super Bite Burger"
 	description = "If this doesn't clog their arteries, nothing will. Two bites will take you from starving to overfed."
 	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
 	required_points = 1
 	required_atoms = list(
 		/obj/item/food/burger/superbite = 1,)
-/datum/experiment/scanning/points/saladofeden // = 1000,
+/datum/experiment/scanning/points/saladofeden // = 700,
 	name = "Salad of Eden"
 	description = "A salad brimming with untapped potential."
 	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
 	required_points = 1
 	required_atoms = list(
 		/obj/item/food/salad/edensalad = 1,)
-/datum/experiment/scanning/points/Spidermeatbread // = 1000,
+/datum/experiment/scanning/points/Spidermeatbread // = 700,
 	name = "Spidermeat bread"
 	description = "A salad brimming with untapped potential."
 	traits = EXPERIMENT_TRAIT_DESTRUCTIVE
@@ -198,35 +198,278 @@
 	required_atoms = list(
 		fillout = 1,)
 //master
-/datum/experiment/scanning/points/cak
+/datum/experiment/scanning/points/cak// = 1000,
 	name = "fillout"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
 		/mob/living/simple_animal/pet/cat/cak = 1,)
-/datum/experiment/scanning/points/breadcat
+/datum/experiment/scanning/points/breadcat// = 1000,
 	name = "Bread cat"
 	description = "It's a cat... with a bread!"
 	required_points = 1
 	required_atoms = list(
 		/mob/living/simple_animal/pet/cat/breadcat = 1,)
-//*********botany*********
-//easy
-
-//medium
-
-//hard
-
-//master
-
 //*********cytology*********
 //easy
+/datum/experiment/scanning/points/Mouse// = 200,
+	name = "Mouse"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Chicken// = 200,
+	name = "Chicken"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cockroach// = 200,
+	name = "Cockroach"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Frog// = 200,
+	name = "Frog"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/BlobSpore// = 200,
+	name = "BlobSpore"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 
 //medium
+/datum/experiment/scanning/points/Cow// = 400,
+	name = "Cow"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cat// = 400,
+	name = "Cat"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Corgi// = 400,
+	name = "Corgi"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/SpaceCarp// = 400,
+	name = "Space Carp"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/QueenBee// = 400,
+	name = "Queen Bee"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 
 //hard
-//mob/living/simple_animal/hostile/ooze/gelatinous
-//mob/living/simple_animal/hostile/ooze/grapes
+/datum/experiment/scanning/points/MegaSpaceCarp// = 700,
+	name = "Mega Space Carp"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/mob/living/simple_animal/pet/cat/breadcat = 1,)
+/datum/experiment/scanning/points/MegaArachnid// = 700,
+	name = "Mega Arachnid"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/mob/living/simple_animal/pet/cat/breadcat = 1,)
+/datum/experiment/scanning/points/GelatinousCube// = 700,
+	name = "Gelatinous Cube"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/mob/living/simple_animal/pet/cat/breadcat = 1,)
+/datum/experiment/scanning/points/SholeanGrapes// = 700,
+	name = "Sholean Grapes"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/mob/living/simple_animal/pet/cat/breadcat = 1,)
+//master
+/datum/experiment/scanning/points/Leaper// = 2000,
+	name = "Leaper"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/mob/living/simple_animal/pet/cat/breadcat = 1,)
+/datum/experiment/scanning/points/VatBeast// = 2000,
+	name = "Vat Beast"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/mob/living/simple_animal/pet/cat/breadcat = 1,)
+//*********botany*********
+//easy
+/datum/experiment/scanning/points/Apple// = 100,
+	name = "Apple"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Banana// = 100,
+	name = "Banana"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Berry// = 100,
+	name = "Berry"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Tomato// = 100,
+	name = "tomato"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cabbage// = 100,
+	name = "Cabbage"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Carrot// = 100,
+	name = "Carrot"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cherry// = 100,
+	name = "Cherry"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cocoa// = 100,
+	name = "Cocoa"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Corn// = 100,
+	name = "Corn"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Eggplant// = 100,
+	name = "Eggplant"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Lemon// = 100,
+	name = "Lemon"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Orange// = 100,
+	name = "Orange"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Peanut// = 100,
+	name = "Peanut"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+
+//medium
+/datum/experiment/scanning/points/Ambrosiadeus// = 400,
+	name = "Ambrosia deus"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Bluespacebanana// = 400,
+	name = "Blue-space banana"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Bluespacetomato// = 400,
+	name = "Blue-space tomato"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Blumpkin// = 400,
+	name = "Blumpkin"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Bluecherry// = 400,
+	name = "Blue cherry"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Combustiblelemon// = 400,	
+	name = "Combustible lemon"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Eggyplant// = 400,	
+	name = "Eggyplant"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Goldapple// = 400,
+	name = "Gold apple"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Holymelon// = 400,
+	name = "Holymelon"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Deathberry// = 400,
+	name = "Peanut"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+
+//hard
+/datum/experiment/scanning/points/Worldpeas// = 700,
+	name = "World peas"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Ambrosiagaia// = 700,
+	name = "Ambrosia gaia"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+
 //master
 
 //*********construction*********
@@ -240,28 +483,153 @@
 
 //*********chemistry*********
 //easy
-/datum/experiment/scanning/points/matterstudy1// = 400,
-	name = "Matter study 1"
-	description = "bitch you gotta make a candle"
+/datum/experiment/scanning/points/Seiver// = 250,
+	name = "Seiver"
+	description = "Seiver"
 	required_points = 1
 	required_atoms = list(
-		/obj/item/candle = 1,)
-/datum/experiment/scanning/points/matterstudy2// = 400,
-	name = "Matter study 2"
-	description = "bitch you gotta make soap"
+		fillout = 1,)
+/datum/experiment/scanning/points/Helbital// = 250,
+	name = "Calomel"
+	description = "Calomel"
 	required_points = 1
 	required_atoms = list(
-		/obj/item/soap/homemade = 1,)
-/datum/experiment/scanning/points/matterstudy3// = 400,
-	name = "Matter study 3"
-	description = "bitch you gotta make meat"
+		fillout = 1,)
+/datum/experiment/scanning/points/Calomel// = 250,
+	name = "Calomel"
+	description = "Calomel"
 	required_points = 1
 	required_atoms = list(
-		/obj/item/food/meat/slab/synthmeat = 1,)
-
+		fillout = 1,)
+/datum/experiment/scanning/points/Mannitol// = 250,
+	name = "Mannitol"
+	description = "Mannitol"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Oil// = 250,
+	name = "Oil"
+	description = "Oil"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/PotassiumIodide// = 250,
+	name = "Potassium Iodide"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Synaptizine// = 250,
+	name = "Synaptizine"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/SpaceDrugs// = 250,
+	name = "SpaceDrugs"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cryptobiolin// = 250,
+	name = "Cryptobiolin"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 //medium
 
+/datum/experiment/scanning/points/Mutadone// = 500,
+	name = "Mutadone"
+	description = "Mutadone"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Candle// = 500,
+	name = "Mutadone"
+	description = "Mutadone"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Oculine// = 500,
+	name = "Oculine"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Diphenhydramine// = 500,
+	name = "Diphenhydramine"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Ephedrine// = 500,
+	name = "Ephedrine"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Neurine// = 500,
+	name = "Neurine"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Lidocaine// = 500,
+	name = "Lidocaine"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/MeatProduct// = 500,
+	name = "MeatProduct"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Cryoxadone// = 500,
+	name = "Cryoxadone"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Lipolicide// = 500,
+	name = "Lipolicide"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 //hard
+/datum/experiment/scanning/points/StrangeReagent// = 750,
+	name = "StrangeReagent"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Epinephrine// = 750,
+	name = "Epinephrine"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Modafinil// = 750,
+	name = "Modafinil"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Rotatium// = 750,
+	name = "Cryoxadone"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/BathSalts// = 750,
+	name = "BathSalts"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
 
 //master
 
@@ -841,7 +1209,7 @@
 	id = "process"
 	prereq_ids = list("porn")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
-	display_name = "processing technology"
+	display_name = "Processing"
 	description = "permission to crungle and scrungle things into other thing"
 	design_ids = list(
 		"gibber",
@@ -871,8 +1239,8 @@
 /datum/techweb_node/manip
 	id = "manip"
 	prereq_ids = list("porn")
-	display_name = "manipulators"
-	description = "dave matthews band fucking sucks"
+	display_name = "Manipulators 1"
+	description = "The first stage of manipulators"
 	design_ids = list(
 		"micro_mani",
 		"autolathe",
@@ -881,8 +1249,8 @@
 /datum/techweb_node/manip1
 	id = "manip1"
 	prereq_ids = list("manip")
-	display_name = "manipulators 2!"
-	description = "its not that bad actually i guess"
+	display_name = "Manipulators 2"
+	description = "The second stage of manipulators"
 	design_ids = list(
 		"nano_mani",
 		"conveyor_belt",
@@ -894,8 +1262,8 @@
 /datum/techweb_node/manip2
 	id = "manip2"
 	prereq_ids = list("manip1")
-	display_name = "manipulators 3"
-	description = "fillout"
+	display_name = "Manipulators 3"
+	description = "The third stage of manipulators"
 	design_ids = list(
 		"pico_mani",
 		"rped",
@@ -907,8 +1275,8 @@
 /datum/techweb_node/manip3
 	id = "manip3"
 	prereq_ids = list("manip2")
-	display_name = "manip3"
-	description = "fillout"
+	display_name = "Manipulators 4"
+	description = "The fourth and final stage of manipulators"
 	design_ids = list(
 		"femto_mani",
 	)
@@ -917,8 +1285,8 @@
 /datum/techweb_node/laser
 	id = "laser"
 	prereq_ids = list("porn")
-	display_name = "fillout"
-	description = "fillout"
+	display_name = "Lasers 1"
+	description = "The first stage of laser development"
 	design_ids = list(
 		"basic_micro_laser",
 		"scigoggles",
@@ -929,8 +1297,8 @@
 /datum/techweb_node/laser1
 	id = "laser1"
 	prereq_ids = list("laser")
-	display_name = "fillout"
-	description = "fillout"
+	display_name = "Lasers 2"
+	description = "The second stage of laser development"
 	design_ids = list(
 		"high_micro_laser",
 		"health_hud",
@@ -942,11 +1310,10 @@
 /datum/techweb_node/laser2
 	id = "laser2"
 	prereq_ids = list("laser1")
-	display_name = "fillout"
-	description = "fillout"
+	display_name = "Lasers 3"
+	description = "The third stage of laser development"
 	design_ids = list(
 		"ultra_micro_laser",
-
 		"emitter"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
@@ -954,8 +1321,8 @@
 /datum/techweb_node/laser3
 	id = "laser3"
 	prereq_ids = list("laser2")
-	display_name = "fillout"
-	description = "fillout"
+	display_name = "Lasers 4"
+	description = "The fourth and final stage of laser development"
 	design_ids = list(
 		"quadultra_micro_laser",
 		"laserscalpel",
@@ -966,8 +1333,8 @@
 /datum/techweb_node/bin
 	id = "bin"
 	prereq_ids = list("porn")
-	display_name = "fillout"
-	description = "fillout"
+	display_name = "Matter Bins 1"
+	description = "The first stage of matter bin development"
 	design_ids = list(
 		"basic_matter_bin",
 	)
@@ -975,7 +1342,7 @@
 /datum/techweb_node/bin1
 	id = "bin1"
 	prereq_ids = list("bin")
-	display_name = "fillout"
+	display_name = "The second stage of matter bin development"
 	description = "fillout"
 	design_ids = list(
 		"adv_matter_bin",
@@ -984,7 +1351,7 @@
 /datum/techweb_node/bin2
 	id = "bin2"
 	prereq_ids = list("bin1")
-	display_name = "fillout"
+	display_name = "The third stage of matter bin development"
 	description = "fillout"
 	design_ids = list(
 		"super_matter_bin",
@@ -992,8 +1359,8 @@
 /datum/techweb_node/bin3
 	id = "bin3"
 	prereq_ids = list("bin2")
-	display_name = "fillout"
-	description = "fillout"
+	display_name = "Matter Bins 4"
+	description = "The fourth and final stage of matter bin development"
 	design_ids = list(
 		"bluespace_matter_bin",
 	)
