@@ -150,7 +150,6 @@
 	required_points = 1
 	required_atoms = list(
 		/obj/item/food/hotdog = 1,)
-
 /datum/experiment/scanning/points/Pbj// = 300,
 	name = "fillout"
 	description = "fillout"
@@ -158,7 +157,6 @@
 	required_points = 1
 	required_atoms = list(
 		fillout = 1,)
-
 /datum/experiment/scanning/points/SpacyLibertyDuff// = 300,
 	name = "Spacy Liberty Duff"
 	description = "The colors, maaaan, THE COLORS"
@@ -166,7 +164,6 @@
 	required_points = 1
 	required_atoms = list(
 		/obj/item/food/soup/spacylibertyduff = 1,)
-
 /datum/experiment/scanning/points/Zurek// = 300,
 	name = "Zurek"
 	description = "	A traditional Polish soup composed of vegetables, meat, and an egg. Goes great with bread."
@@ -393,7 +390,6 @@
 	required_points = 1
 	required_atoms = list(
 		fillout = 1,)
-
 //medium
 /datum/experiment/scanning/points/Ambrosiadeus// = 400,
 	name = "Ambrosia deus"
@@ -455,7 +451,6 @@
 	required_points = 1
 	required_atoms = list(
 		fillout = 1,)
-
 //hard
 /datum/experiment/scanning/points/Worldpeas// = 700,
 	name = "World peas"
@@ -845,25 +840,24 @@
 
 //*********atmos*********
 //easy
-/datum/experiment/scanning/points/ammonia
-	name = "fillout"
+/datum/experiment/scanning/points/CrystalFoamGrenade
+	name = "Crystal Foam Grenade"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/stack/ammonia_crystals = 1,)
-
-/datum/experiment/scanning/points/n2ocrystal
+/datum/experiment/scanning/points/AmmoniaCrystal
+	name = "AmmoniaCrystal"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		)
+/datum/experiment/scanning/points/NitrousOxideCrystal
 	name = "n2o crystal"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/grenade/gas_crystal/nitrous_oxide_crystal = 1,)
-/datum/experiment/scanning/points/nitrium
-	name = "fillout"
-	description = "fillout"
-	required_points = 1
-	required_atoms = list(
-		/obj/item/nitrium_crystal = 1,)
 //medium
 /datum/experiment/scanning/points/crystal
 	name = "Crystal"
@@ -871,22 +865,50 @@
 	required_points = 1
 	required_atoms = list(
 		/obj/item/stock_parts/cell/crystal_cell = 1,)
-
+/datum/experiment/scanning/points/MetallicHydrogen
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/stack/ammonia_crystals = 1,)
+/datum/experiment/scanning/points/Nitrium
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/nitrium_crystal = 1,)
 //hard
-/datum/experiment/scanning/points/hypernob
+/datum/experiment/scanning/points/HyperNobliumCrystal
 	name = "fillout"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/hypernoblium_crystal = 1,)
-/datum/experiment/scanning/points/hotice
+/datum/experiment/scanning/points/HotIce
+	name = "fillout"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/stack/sheet/hot_ice = 1,)
+/datum/experiment/scanning/points/HealiumCrystal
 	name = "fillout"
 	description = "fillout"
 	required_points = 1
 	required_atoms = list(
 		/obj/item/stack/sheet/hot_ice = 1,)
 //master
-
+/datum/experiment/scanning/points/SupermatterShard
+	name = "Supermatter Shard"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/stock_parts/cell/crystal_cell = 1,)
+/datum/experiment/scanning/points/Zaukerite
+	name = "Zaukerite"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		/obj/item/stock_parts/cell/crystal_cell = 1,)
 //*********xenobio*********
 //easy
 /datum/experiment/scanning/points/GreySlime //=250
@@ -1094,7 +1116,6 @@
 		"cybernetic_stomach_tier3",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 6000)
-
 /datum/techweb_node/reagentholdinga
 	id = "reagentholdinga"
 	prereq_ids = list("basic_medical")
@@ -1116,7 +1137,6 @@
 		"meta_beaker"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
-
 /datum/techweb_node/reagentholdingc
 	id = "reagentholdingb"
 	prereq_ids = list("reagentholdingb")
@@ -1126,7 +1146,6 @@
 	design_ids = list("bluespacesyringe",
 		"bluespacebeaker"
 	)
-
 /datum/techweb_node/electricitya
 	id = "electricitya"
 	prereq_ids = list("porn")
@@ -1137,6 +1156,30 @@
 		"cell_charger",
 		"solarcontrol",
 	)
+	discount_experiments = list(/datum/experiment/scanning/points/Seiver = 250,
+		/datum/experiment/scanning/points/Helbital = 250,
+		/datum/experiment/scanning/points/Calomel = 250,
+		/datum/experiment/scanning/points/Mannitol = 250,
+		/datum/experiment/scanning/points/Oil = 250,
+		/datum/experiment/scanning/points/PotassiumIodide =250,
+		/datum/experiment/scanning/points/Synaptizine = 250,
+		/datum/experiment/scanning/points/SpaceDrugs = 250,
+		/datum/experiment/scanning/points/Cryptobiolin = 250,
+		/datum/experiment/scanning/points/Mutadone = 500,
+		/datum/experiment/scanning/points/Candle = 500,
+		/datum/experiment/scanning/points/Oculine = 500,
+		/datum/experiment/scanning/points/Diphenhydramine =500,
+		/datum/experiment/scanning/points/Ephedrine = 500,
+		/datum/experiment/scanning/points/Neurine = 500,
+		/datum/experiment/scanning/points/Lidocaine = 500,
+		/datum/experiment/scanning/points/MeatProduct = 500,
+		/datum/experiment/scanning/points/Cryoxadone = 500,
+		/datum/experiment/scanning/points/Lipolicide = 500,
+		/datum/experiment/scanning/points/StrangeReagent =750,
+		/datum/experiment/scanning/points/Epinephrine = 750,
+		/datum/experiment/scanning/points/Modafinil = 750,
+		/datum/experiment/scanning/points/Rotatium = 750,
+		/datum/experiment/scanning/points/BathSalts = 750,)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
 /datum/techweb_node/electricityb
 	id = "electricityb"
@@ -1154,7 +1197,6 @@
 		"turbine_part_stator",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-
 /datum/techweb_node/electricityc
 	id = "electricityc"
 	prereq_ids = list("reagentholdingb")
@@ -1293,7 +1335,34 @@
 		"mesons"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
-
+	discount_experiments = list(
+		/datum/experiment/scanning/points/bread = 100,
+		/datum/experiment/scanning/points/cake = 100,
+		/datum/experiment/scanning/points/cheese = 100,
+		/datum/experiment/scanning/points/spaghetti = 100,
+		/datum/experiment/scanning/points/tofu = 100,
+		/datum/experiment/scanning/points/butter = 100,
+		/datum/experiment/scanning/points/pie = 100,
+		/datum/experiment/scanning/points/donk = 100,
+		/datum/experiment/scanning/points/MelonFruitBowl = 300,
+		/datum/experiment/scanning/points/RoffleWaffles = 300,
+		/datum/experiment/scanning/points/McGuffin = 300,
+		/datum/experiment/scanning/points/ButterBiscuit = 300,
+		/datum/experiment/scanning/points/CarrotCake = 300,
+		/datum/experiment/scanning/points/CheeseCake = 300,
+		/datum/experiment/scanning/points/Poutine = 300,
+		/datum/experiment/scanning/points/StuffedCabbage = 300,
+		/datum/experiment/scanning/points/ValidSalad = 300,
+		/datum/experiment/scanning/points/HotDog = 300,
+		/datum/experiment/scanning/points/Pbj = 300,
+		/datum/experiment/scanning/points/SpacyLibertyDuff = 300,
+		/datum/experiment/scanning/points/Zurek = 300,
+		/datum/experiment/scanning/points/superbiteburger  = 700,
+		/datum/experiment/scanning/points/saladofeden  = 700,
+		/datum/experiment/scanning/points/Spidermeatbread  = 700,
+		/datum/experiment/scanning/points/cak = 1000,
+		/datum/experiment/scanning/points/breadcat = 1000,
+		)
 /datum/techweb_node/laser1
 	id = "laser1"
 	prereq_ids = list("laser")
@@ -1305,7 +1374,34 @@
 		"mesons",
 		"microwave"
 	)
-
+	discount_experiments = list(
+		/datum/experiment/scanning/points/bread = 100,
+		/datum/experiment/scanning/points/cake = 100,
+		/datum/experiment/scanning/points/cheese = 100,
+		/datum/experiment/scanning/points/spaghetti = 100,
+		/datum/experiment/scanning/points/tofu = 100,
+		/datum/experiment/scanning/points/butter = 100,
+		/datum/experiment/scanning/points/pie = 100,
+		/datum/experiment/scanning/points/donk = 100,
+		/datum/experiment/scanning/points/MelonFruitBowl = 300,
+		/datum/experiment/scanning/points/RoffleWaffles = 300,
+		/datum/experiment/scanning/points/McGuffin = 300,
+		/datum/experiment/scanning/points/ButterBiscuit = 300,
+		/datum/experiment/scanning/points/CarrotCake = 300,
+		/datum/experiment/scanning/points/CheeseCake = 300,
+		/datum/experiment/scanning/points/Poutine = 300,
+		/datum/experiment/scanning/points/StuffedCabbage = 300,
+		/datum/experiment/scanning/points/ValidSalad = 300,
+		/datum/experiment/scanning/points/HotDog = 300,
+		/datum/experiment/scanning/points/Pbj = 300,
+		/datum/experiment/scanning/points/SpacyLibertyDuff = 300,
+		/datum/experiment/scanning/points/Zurek = 300,
+		/datum/experiment/scanning/points/superbiteburger  = 700,
+		/datum/experiment/scanning/points/saladofeden  = 700,
+		/datum/experiment/scanning/points/Spidermeatbread  = 700,
+		/datum/experiment/scanning/points/cak = 1000,
+		/datum/experiment/scanning/points/breadcat = 1000,
+		)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 /datum/techweb_node/laser2
 	id = "laser2"
@@ -1317,7 +1413,34 @@
 		"emitter"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-
+	discount_experiments = list(
+		/datum/experiment/scanning/points/bread = 100,
+		/datum/experiment/scanning/points/cake = 100,
+		/datum/experiment/scanning/points/cheese = 100,
+		/datum/experiment/scanning/points/spaghetti = 100,
+		/datum/experiment/scanning/points/tofu = 100,
+		/datum/experiment/scanning/points/butter = 100,
+		/datum/experiment/scanning/points/pie = 100,
+		/datum/experiment/scanning/points/donk = 100,
+		/datum/experiment/scanning/points/MelonFruitBowl = 300,
+		/datum/experiment/scanning/points/RoffleWaffles = 300,
+		/datum/experiment/scanning/points/McGuffin = 300,
+		/datum/experiment/scanning/points/ButterBiscuit = 300,
+		/datum/experiment/scanning/points/CarrotCake = 300,
+		/datum/experiment/scanning/points/CheeseCake = 300,
+		/datum/experiment/scanning/points/Poutine = 300,
+		/datum/experiment/scanning/points/StuffedCabbage = 300,
+		/datum/experiment/scanning/points/ValidSalad = 300,
+		/datum/experiment/scanning/points/HotDog = 300,
+		/datum/experiment/scanning/points/Pbj = 300,
+		/datum/experiment/scanning/points/SpacyLibertyDuff = 300,
+		/datum/experiment/scanning/points/Zurek = 300,
+		/datum/experiment/scanning/points/superbiteburger  = 700,
+		/datum/experiment/scanning/points/saladofeden  = 700,
+		/datum/experiment/scanning/points/Spidermeatbread  = 700,
+		/datum/experiment/scanning/points/cak = 1000,
+		/datum/experiment/scanning/points/breadcat = 1000,
+		)
 /datum/techweb_node/laser3
 	id = "laser3"
 	prereq_ids = list("laser2")
@@ -1329,7 +1452,34 @@
 		"searingtool",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
-
+	discount_experiments = list(
+		/datum/experiment/scanning/points/bread = 100,
+		/datum/experiment/scanning/points/cake = 100,
+		/datum/experiment/scanning/points/cheese = 100,
+		/datum/experiment/scanning/points/spaghetti = 100,
+		/datum/experiment/scanning/points/tofu = 100,
+		/datum/experiment/scanning/points/butter = 100,
+		/datum/experiment/scanning/points/pie = 100,
+		/datum/experiment/scanning/points/donk = 100,
+		/datum/experiment/scanning/points/MelonFruitBowl = 300,
+		/datum/experiment/scanning/points/RoffleWaffles = 300,
+		/datum/experiment/scanning/points/McGuffin = 300,
+		/datum/experiment/scanning/points/ButterBiscuit = 300,
+		/datum/experiment/scanning/points/CarrotCake = 300,
+		/datum/experiment/scanning/points/CheeseCake = 300,
+		/datum/experiment/scanning/points/Poutine = 300,
+		/datum/experiment/scanning/points/StuffedCabbage = 300,
+		/datum/experiment/scanning/points/ValidSalad = 300,
+		/datum/experiment/scanning/points/HotDog = 300,
+		/datum/experiment/scanning/points/Pbj = 300,
+		/datum/experiment/scanning/points/SpacyLibertyDuff = 300,
+		/datum/experiment/scanning/points/Zurek = 300,
+		/datum/experiment/scanning/points/superbiteburger  = 700,
+		/datum/experiment/scanning/points/saladofeden  = 700,
+		/datum/experiment/scanning/points/Spidermeatbread  = 700,
+		/datum/experiment/scanning/points/cak = 1000,
+		/datum/experiment/scanning/points/breadcat = 1000,
+		)
 /datum/techweb_node/bin
 	id = "bin"
 	prereq_ids = list("porn")
@@ -1339,6 +1489,33 @@
 		"basic_matter_bin",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Apple = 100,
+		/datum/experiment/scanning/points/Banana = 100,
+		/datum/experiment/scanning/points/Berry = 100,
+		/datum/experiment/scanning/points/Tomato = 100,
+		/datum/experiment/scanning/points/Cabbage = 100,
+		/datum/experiment/scanning/points/Carrot = 100,
+		/datum/experiment/scanning/points/Cherry = 100,
+		/datum/experiment/scanning/points/Cocoa = 100,
+		/datum/experiment/scanning/points/Corn = 100,
+		/datum/experiment/scanning/points/Eggplant = 100,
+		/datum/experiment/scanning/points/Lemon = 100,
+		/datum/experiment/scanning/points/Orange = 100,
+		/datum/experiment/scanning/points/Peanut = 100,
+		/datum/experiment/scanning/points/Ambrosiadeus = 400,
+		/datum/experiment/scanning/points/Bluespacebanana = 400,
+		/datum/experiment/scanning/points/Bluespacetomato = 400,
+		/datum/experiment/scanning/points/Blumpkin = 400,
+		/datum/experiment/scanning/points/Bluecherry = 400,
+		/datum/experiment/scanning/points/Combustiblelemon = 400,	
+		/datum/experiment/scanning/points/Eggyplant = 400,	
+		/datum/experiment/scanning/points/Goldapple = 400,
+		/datum/experiment/scanning/points/Holymelon = 400,
+		/datum/experiment/scanning/points/Deathberry = 400,
+		/datum/experiment/scanning/points/Worldpeas = 700,
+		/datum/experiment/scanning/points/Ambrosiagaia = 700,
+    )
 /datum/techweb_node/bin1
 	id = "bin1"
 	prereq_ids = list("bin")
@@ -1347,6 +1524,33 @@
 	design_ids = list(
 		"adv_matter_bin",
 	)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Apple = 100,
+		/datum/experiment/scanning/points/Banana = 100,
+		/datum/experiment/scanning/points/Berry = 100,
+		/datum/experiment/scanning/points/Tomato = 100,
+		/datum/experiment/scanning/points/Cabbage = 100,
+		/datum/experiment/scanning/points/Carrot = 100,
+		/datum/experiment/scanning/points/Cherry = 100,
+		/datum/experiment/scanning/points/Cocoa = 100,
+		/datum/experiment/scanning/points/Corn = 100,
+		/datum/experiment/scanning/points/Eggplant = 100,
+		/datum/experiment/scanning/points/Lemon = 100,
+		/datum/experiment/scanning/points/Orange = 100,
+		/datum/experiment/scanning/points/Peanut = 100,
+		/datum/experiment/scanning/points/Ambrosiadeus = 400,
+		/datum/experiment/scanning/points/Bluespacebanana = 400,
+		/datum/experiment/scanning/points/Bluespacetomato = 400,
+		/datum/experiment/scanning/points/Blumpkin = 400,
+		/datum/experiment/scanning/points/Bluecherry = 400,
+		/datum/experiment/scanning/points/Combustiblelemon = 400,	
+		/datum/experiment/scanning/points/Eggyplant = 400,	
+		/datum/experiment/scanning/points/Goldapple = 400,
+		/datum/experiment/scanning/points/Holymelon = 400,
+		/datum/experiment/scanning/points/Deathberry = 400,
+		/datum/experiment/scanning/points/Worldpeas = 700,
+		/datum/experiment/scanning/points/Ambrosiagaia = 700,
+    )
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 /datum/techweb_node/bin2
 	id = "bin2"
@@ -1356,6 +1560,33 @@
 	design_ids = list(
 		"super_matter_bin",
 	)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Apple = 100,
+		/datum/experiment/scanning/points/Banana = 100,
+		/datum/experiment/scanning/points/Berry = 100,
+		/datum/experiment/scanning/points/Tomato = 100,
+		/datum/experiment/scanning/points/Cabbage = 100,
+		/datum/experiment/scanning/points/Carrot = 100,
+		/datum/experiment/scanning/points/Cherry = 100,
+		/datum/experiment/scanning/points/Cocoa = 100,
+		/datum/experiment/scanning/points/Corn = 100,
+		/datum/experiment/scanning/points/Eggplant = 100,
+		/datum/experiment/scanning/points/Lemon = 100,
+		/datum/experiment/scanning/points/Orange = 100,
+		/datum/experiment/scanning/points/Peanut = 100,
+		/datum/experiment/scanning/points/Ambrosiadeus = 400,
+		/datum/experiment/scanning/points/Bluespacebanana = 400,
+		/datum/experiment/scanning/points/Bluespacetomato = 400,
+		/datum/experiment/scanning/points/Blumpkin = 400,
+		/datum/experiment/scanning/points/Bluecherry = 400,
+		/datum/experiment/scanning/points/Combustiblelemon = 400,	
+		/datum/experiment/scanning/points/Eggyplant = 400,	
+		/datum/experiment/scanning/points/Goldapple = 400,
+		/datum/experiment/scanning/points/Holymelon = 400,
+		/datum/experiment/scanning/points/Deathberry = 400,
+		/datum/experiment/scanning/points/Worldpeas = 700,
+		/datum/experiment/scanning/points/Ambrosiagaia = 700,
+    )
 /datum/techweb_node/bin3
 	id = "bin3"
 	prereq_ids = list("bin2")
@@ -1364,6 +1595,33 @@
 	design_ids = list(
 		"bluespace_matter_bin",
 	)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Apple = 100,
+		/datum/experiment/scanning/points/Banana = 100,
+		/datum/experiment/scanning/points/Berry = 100,
+		/datum/experiment/scanning/points/Tomato = 100,
+		/datum/experiment/scanning/points/Cabbage = 100,
+		/datum/experiment/scanning/points/Carrot = 100,
+		/datum/experiment/scanning/points/Cherry = 100,
+		/datum/experiment/scanning/points/Cocoa = 100,
+		/datum/experiment/scanning/points/Corn = 100,
+		/datum/experiment/scanning/points/Eggplant = 100,
+		/datum/experiment/scanning/points/Lemon = 100,
+		/datum/experiment/scanning/points/Orange = 100,
+		/datum/experiment/scanning/points/Peanut = 100,
+		/datum/experiment/scanning/points/Ambrosiadeus = 400,
+		/datum/experiment/scanning/points/Bluespacebanana = 400,
+		/datum/experiment/scanning/points/Bluespacetomato = 400,
+		/datum/experiment/scanning/points/Blumpkin = 400,
+		/datum/experiment/scanning/points/Bluecherry = 400,
+		/datum/experiment/scanning/points/Combustiblelemon = 400,	
+		/datum/experiment/scanning/points/Eggyplant = 400,	
+		/datum/experiment/scanning/points/Goldapple = 400,
+		/datum/experiment/scanning/points/Holymelon = 400,
+		/datum/experiment/scanning/points/Deathberry = 400,
+		/datum/experiment/scanning/points/Worldpeas = 700,
+		/datum/experiment/scanning/points/Ambrosiagaia = 700,
+    )
 /datum/techweb_node/scanning
 	id = "scanning"
 	prereq_ids = list("porn")
@@ -1372,8 +1630,41 @@
 	design_ids = list(
 		"basic_scanning",
 	)
-
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
+	discount_experiments = list(/datum/experiment/scanning/points/FierySweat = 100,
+		/datum/experiment/scanning/points/Mute = 100,
+		/datum/experiment/scanning/points/Unintelligible = 100,
+		/datum/experiment/scanning/points/Illiterate = 100,
+		/datum/experiment/scanning/points/Deafness = 100,
+		/datum/experiment/scanning/points/Blindness = 100,
+		/datum/experiment/scanning/points/Nervousness = 100,
+		/datum/experiment/scanning/points/Tourette = 100,
+		/datum/experiment/scanning/points/Coughing = 100,
+		/datum/experiment/scanning/points/Epilepsy = 100,
+		/datum/experiment/scanning/points/NearSightness = 100,
+		/datum/experiment/scanning/points/Telekinesis  = 200,
+		/datum/experiment/scanning/points/TemperatureAdaptation = 200,
+		/datum/experiment/scanning/points/PressureAdaptation = 200,
+		/datum/experiment/scanning/points/ThermalVision = 200,
+		/datum/experiment/scanning/points/Chameleon = 200,
+		/datum/experiment/scanning/points/Dwarfism = 200,
+		/datum/experiment/scanning/points/Glowy = 200,
+		/datum/experiment/scanning/points/VoidMagnet = 200,
+		/datum/experiment/scanning/points/Telepathy = 200,
+		/datum/experiment/scanning/points/Insulated = 200,
+		/datum/experiment/scanning/points/TranscendentOlfaction = 200,
+		/datum/experiment/scanning/points/Geladikinesis = 200,
+		/datum/experiment/scanning/points/Cryokinesis = 200,
+		/datum/experiment/scanning/points/Antenna = 200,
+		/datum/experiment/scanning/points/Gigantism = 200,
+		/datum/experiment/scanning/points/Autonomy = 200,
+		/datum/experiment/scanning/points/TongueSpike = 200,
+		/datum/experiment/scanning/points/Stimmed = 200,
+		/datum/experiment/scanning/points/WebbingProduction = 200,
+		/datum/experiment/scanning/points/ChemSpike = 300,
+		/datum/experiment/scanning/points/ShockTouch = 300,
+		/datum/experiment/scanning/points/AntiGlow = 300,
+		/datum/experiment/scanning/points/Hulk = 300,)
 /datum/techweb_node/scanning1
 	id = "scanning1"
 	prereq_ids = list("scanning")
@@ -1387,6 +1678,40 @@
 		"implant_tracking",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	discount_experiments = list(/datum/experiment/scanning/points/FierySweat = 100,
+		/datum/experiment/scanning/points/Mute = 100,
+		/datum/experiment/scanning/points/Unintelligible = 100,
+		/datum/experiment/scanning/points/Illiterate = 100,
+		/datum/experiment/scanning/points/Deafness = 100,
+		/datum/experiment/scanning/points/Blindness = 100,
+		/datum/experiment/scanning/points/Nervousness = 100,
+		/datum/experiment/scanning/points/Tourette = 100,
+		/datum/experiment/scanning/points/Coughing = 100,
+		/datum/experiment/scanning/points/Epilepsy = 100,
+		/datum/experiment/scanning/points/NearSightness = 100,
+		/datum/experiment/scanning/points/Telekinesis  = 200,
+		/datum/experiment/scanning/points/TemperatureAdaptation = 200,
+		/datum/experiment/scanning/points/PressureAdaptation = 200,
+		/datum/experiment/scanning/points/ThermalVision = 200,
+		/datum/experiment/scanning/points/Chameleon = 200,
+		/datum/experiment/scanning/points/Dwarfism = 200,
+		/datum/experiment/scanning/points/Glowy = 200,
+		/datum/experiment/scanning/points/VoidMagnet = 200,
+		/datum/experiment/scanning/points/Telepathy = 200,
+		/datum/experiment/scanning/points/Insulated = 200,
+		/datum/experiment/scanning/points/TranscendentOlfaction = 200,
+		/datum/experiment/scanning/points/Geladikinesis = 200,
+		/datum/experiment/scanning/points/Cryokinesis = 200,
+		/datum/experiment/scanning/points/Antenna = 200,
+		/datum/experiment/scanning/points/Gigantism = 200,
+		/datum/experiment/scanning/points/Autonomy = 200,
+		/datum/experiment/scanning/points/TongueSpike = 200,
+		/datum/experiment/scanning/points/Stimmed = 200,
+		/datum/experiment/scanning/points/WebbingProduction = 200,
+		/datum/experiment/scanning/points/ChemSpike = 300,
+		/datum/experiment/scanning/points/ShockTouch = 300,
+		/datum/experiment/scanning/points/AntiGlow = 300,
+		/datum/experiment/scanning/points/Hulk = 300,)
 /datum/techweb_node/scanning2
 	id = "scanning2"
 	prereq_ids = list("scanning1")
@@ -1414,6 +1739,40 @@
 		"s_treatment",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+		discount_experiments = list(/datum/experiment/scanning/points/FierySweat = 100,
+		/datum/experiment/scanning/points/Mute = 100,
+		/datum/experiment/scanning/points/Unintelligible = 100,
+		/datum/experiment/scanning/points/Illiterate = 100,
+		/datum/experiment/scanning/points/Deafness = 100,
+		/datum/experiment/scanning/points/Blindness = 100,
+		/datum/experiment/scanning/points/Nervousness = 100,
+		/datum/experiment/scanning/points/Tourette = 100,
+		/datum/experiment/scanning/points/Coughing = 100,
+		/datum/experiment/scanning/points/Epilepsy = 100,
+		/datum/experiment/scanning/points/NearSightness = 100,
+		/datum/experiment/scanning/points/Telekinesis  = 200,
+		/datum/experiment/scanning/points/TemperatureAdaptation = 200,
+		/datum/experiment/scanning/points/PressureAdaptation = 200,
+		/datum/experiment/scanning/points/ThermalVision = 200,
+		/datum/experiment/scanning/points/Chameleon = 200,
+		/datum/experiment/scanning/points/Dwarfism = 200,
+		/datum/experiment/scanning/points/Glowy = 200,
+		/datum/experiment/scanning/points/VoidMagnet = 200,
+		/datum/experiment/scanning/points/Telepathy = 200,
+		/datum/experiment/scanning/points/Insulated = 200,
+		/datum/experiment/scanning/points/TranscendentOlfaction = 200,
+		/datum/experiment/scanning/points/Geladikinesis = 200,
+		/datum/experiment/scanning/points/Cryokinesis = 200,
+		/datum/experiment/scanning/points/Antenna = 200,
+		/datum/experiment/scanning/points/Gigantism = 200,
+		/datum/experiment/scanning/points/Autonomy = 200,
+		/datum/experiment/scanning/points/TongueSpike = 200,
+		/datum/experiment/scanning/points/Stimmed = 200,
+		/datum/experiment/scanning/points/WebbingProduction = 200,
+		/datum/experiment/scanning/points/ChemSpike = 300,
+		/datum/experiment/scanning/points/ShockTouch = 300,
+		/datum/experiment/scanning/points/AntiGlow = 300,
+		/datum/experiment/scanning/points/Hulk = 300,)
 /datum/techweb_node/scanning3
 	id = "scanning3"
 	prereq_ids = list("scanning2")
@@ -1422,6 +1781,40 @@
 	design_ids = list(
 		"phasic_scanning",
 	)
+	discount_experiments = list(/datum/experiment/scanning/points/FierySweat = 100,
+		/datum/experiment/scanning/points/Mute = 100,
+		/datum/experiment/scanning/points/Unintelligible = 100,
+		/datum/experiment/scanning/points/Illiterate = 100,
+		/datum/experiment/scanning/points/Deafness = 100,
+		/datum/experiment/scanning/points/Blindness = 100,
+		/datum/experiment/scanning/points/Nervousness = 100,
+		/datum/experiment/scanning/points/Tourette = 100,
+		/datum/experiment/scanning/points/Coughing = 100,
+		/datum/experiment/scanning/points/Epilepsy = 100,
+		/datum/experiment/scanning/points/NearSightness = 100,
+		/datum/experiment/scanning/points/Telekinesis  = 200,
+		/datum/experiment/scanning/points/TemperatureAdaptation = 200,
+		/datum/experiment/scanning/points/PressureAdaptation = 200,
+		/datum/experiment/scanning/points/ThermalVision = 200,
+		/datum/experiment/scanning/points/Chameleon = 200,
+		/datum/experiment/scanning/points/Dwarfism = 200,
+		/datum/experiment/scanning/points/Glowy = 200,
+		/datum/experiment/scanning/points/VoidMagnet = 200,
+		/datum/experiment/scanning/points/Telepathy = 200,
+		/datum/experiment/scanning/points/Insulated = 200,
+		/datum/experiment/scanning/points/TranscendentOlfaction = 200,
+		/datum/experiment/scanning/points/Geladikinesis = 200,
+		/datum/experiment/scanning/points/Cryokinesis = 200,
+		/datum/experiment/scanning/points/Antenna = 200,
+		/datum/experiment/scanning/points/Gigantism = 200,
+		/datum/experiment/scanning/points/Autonomy = 200,
+		/datum/experiment/scanning/points/TongueSpike = 200,
+		/datum/experiment/scanning/points/Stimmed = 200,
+		/datum/experiment/scanning/points/WebbingProduction = 200,
+		/datum/experiment/scanning/points/ChemSpike = 300,
+		/datum/experiment/scanning/points/ShockTouch = 300,
+		/datum/experiment/scanning/points/AntiGlow = 300,
+		/datum/experiment/scanning/points/Hulk = 300,)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 /datum/techweb_node/capacitor
 	id = "capacitor"
@@ -1446,7 +1839,7 @@
 		"exoscanner_console",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
+/datum/techweb_node/capacitor2
 	id = "capacitor2"
 	prereq_ids = list("capacitor1")
 	display_name = "capacitor 2"
