@@ -28,6 +28,7 @@
  */
 
 //No department
+#define JOB_STANDARD "Standard"
 #define JOB_ASSISTANT "Assistant"
 #define JOB_PRISONER "Prisoner"
 //Command
