@@ -1,4 +1,4 @@
-//datum/techweb_node/fillout
+/datum/techweb_node/fillout
 //	id = "fillout"
 //	prereq_ids = list("fillout")
 //	display_name = "fillout"
@@ -474,14 +474,74 @@
 //master
 
 //*********construction*********
-//easy
-
-//medium
-
-//hard
-
-//master
-
+/datum/experiment/scanning/points/Metal// = 100,
+	name = "Metal"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Glass// = 100,
+	name = "Metal"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Leather// = 150,
+	name = "Material: Leather"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Wood// = 200,
+	name = "Material: Wood"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Plasma// = 500,
+	name = "Material: Plasma"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Durathread// = 700,
+	name = "Material: Durathread"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Gold// = 900,
+	name = "Material: Gold"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Silver// = 1200,
+	name = "Material: Silver"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Diamond// = 1400,
+	name = "Material: Diamond"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Uranium// = 1600,
+	name = "Material: Uranium"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+/datum/experiment/scanning/points/Titanium// = 1800,
+	name = "Material: Titanium"
+	description = "fillout"
+	required_points = 1
+	required_atoms = list(
+		fillout = 1,)
+///datum/experiment/scanning/points/MetallicHydrogen// = 2000,
+///datum/experiment/scanning/points/Zaukerite //= 2200,
 //*********chemistry*********
 //easy
 /datum/experiment/scanning/points/Seiver// = 725,
@@ -632,6 +692,52 @@
 		fillout = 1,)
 //9(1a)+10(2a)+5(3a) = 31900
 //master
+//*********ordnance*********
+
+/datum/experiment/ordnance/explosive/lowyieldbomb// = 1000,
+	name = "Low-Yield Explosives"
+	description = "Low-yield explosives may prove useful for our asset protection teams. Perform research and publish papers on this field. Explosion from any source is allowed."
+	gain = list(10,15,20)
+	target_amount = list(5,10,20)
+	experiment_proper = TRUE
+	sanitized_misc = FALSE
+	sanitized_reactions = FALSE
+	allow_any_source = TRUE
+/datum/experiment/ordnance/explosive/highyieldbomb// = 2000,
+	name = "High-Yield Explosives"
+	description =  "Several reactions react very energetically and can be utilized for bigger explosives. Perform research and publish papers on this field. Any gas reaction is allowed."
+	gain = list(10,50,100)
+	target_amount = list(50,100,300)
+	experiment_proper = TRUE
+	sanitized_misc = FALSE
+	sanitized_reactions = FALSE
+/datum/experiment/ordnance/explosive/hydrogenbomb// = 3000,
+	name = "Hydrogen Explosives"
+	description = "Combustion of Hydrogen and it's derivatives can be very powerful. Perform research and publish papers on this field. Only the specified gas reactions are allowed."
+	gain = list(15,40,60)
+	target_amount = list(50,75,150)
+	experiment_proper = TRUE
+	sanitized_misc = TRUE
+	sanitized_reactions = TRUE
+	require_all = FALSE
+	required_reactions = list(/datum/gas_reaction/h2fire, /datum/gas_reaction/tritfire)
+/datum/experiment/ordnance/explosive/nobliumbomb// = 4000,
+	name = "Noblium Explosives"
+	description = "The formation of Hyper-Noblium is very energetic and can be harnessed for explosives. Perform research and publish papers on this field. Only the specified gas reaction is allowed."
+	gain = list(15,60,120)
+	target_amount = list(50,100,300)
+	experiment_proper = TRUE
+	sanitized_misc = TRUE
+	sanitized_reactions = TRUE
+	required_reactions = list(/datum/gas_reaction/nobliumformation)
+/datum/experiment/ordnance/explosive/pressurebomb// = 3000,
+	name = "Reactionless Explosives"
+	description = "Gases with high specific heat can heat up those with a low one and produce a lot of pressure. Perform research and publish papers on this field. No gas reactions are allowed."
+	gain = list(10,50,100)
+	target_amount = list(20,50,100)
+	experiment_proper = TRUE
+	sanitized_misc = FALSE
+	sanitized_reactions = TRUE
 
 //*********genetics*********
 //easy
@@ -1074,32 +1180,6 @@
 
 //master
 
-
-/datum/techweb_node/basic_medical
-	id = "basic_medical"
-	prereq_ids = list("porn")
-	display_name = "Basic Medical Equipment"
-	description = "Basic medical tools and equipment."
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
-/datum/techweb_node/surgery
-	id = "surgery"
-	prereq_ids = list("basic_medical")
-	display_name = "surgery"
-	description = "rest in peace to all the frogs that died in the line of fire by middle school science programs"
-	design_ids = list(
-		"bonesetter",
-		"cautery",
-		"circular_saw",
-		"scalpel",
-		"retractor",
-		"surgicaldrill",
-		"hemostat",
-		"blood_filter",
-		"surgical_tape",
-		"surgical_drapes",
-		"stethoscope",
-	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
 /datum/techweb_node/bodya
 	id = "bodya"
 	prereq_ids = list("surgery")
@@ -1113,7 +1193,25 @@
 		"cybernetic_stomach",
 		"cybernetic_ears",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Mouse = 840,
+		/datum/experiment/scanning/points/Chicken = 840,
+		/datum/experiment/scanning/points/Cockroach = 840,
+		/datum/experiment/scanning/points/Frog = 840,
+		/datum/experiment/scanning/points/BlobSpore = 840,
+		/datum/experiment/scanning/points/Cow = 1680,
+		/datum/experiment/scanning/points/Cat = 1680,
+		/datum/experiment/scanning/points/Corgi = 1680,
+		/datum/experiment/scanning/points/SpaceCarp = 1680,
+		/datum/experiment/scanning/points/QueenBee = 1680,
+		/datum/experiment/scanning/points/MegaSpaceCarp = 2520,
+		/datum/experiment/scanning/points/MegaArachnid = 2520,
+		/datum/experiment/scanning/points/GelatinousCube = 2520,
+		/datum/experiment/scanning/points/SholeanGrapes = 2520,
+		/datum/experiment/scanning/points/Leaper = 3360,
+		/datum/experiment/scanning/points/VatBeast = 3360,
+		)
 /datum/techweb_node/bodyb
 	id = "bodyb"
 	prereq_ids = list("bodya")
@@ -1126,7 +1224,25 @@
 		"cybernetic_lungs_tier2",
 		"cybernetic_stomach_tier2"
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Mouse = 840,
+		/datum/experiment/scanning/points/Chicken = 840,
+		/datum/experiment/scanning/points/Cockroach = 840,
+		/datum/experiment/scanning/points/Frog = 840,
+		/datum/experiment/scanning/points/BlobSpore = 840,
+		/datum/experiment/scanning/points/Cow = 1680,
+		/datum/experiment/scanning/points/Cat = 1680,
+		/datum/experiment/scanning/points/Corgi = 1680,
+		/datum/experiment/scanning/points/SpaceCarp = 1680,
+		/datum/experiment/scanning/points/QueenBee = 1680,
+		/datum/experiment/scanning/points/MegaSpaceCarp = 2520,
+		/datum/experiment/scanning/points/MegaArachnid = 2520,
+		/datum/experiment/scanning/points/GelatinousCube = 2520,
+		/datum/experiment/scanning/points/SholeanGrapes = 2520,
+		/datum/experiment/scanning/points/Leaper = 3360,
+		/datum/experiment/scanning/points/VatBeast = 3360,
+		)
 /datum/techweb_node/bodyc
 	id = "bodyc"
 	prereq_ids = list("bodyb")
@@ -1139,46 +1255,102 @@
 		"cybernetic_lungs_tier3",
 		"cybernetic_stomach_tier3",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 6000)
-/datum/techweb_node/reagentholdinga
-	id = "reagentholdinga"
-	prereq_ids = list("basic_medical")
-	display_name = "Basic Reagent Holding Equipment"
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Mouse = 840,
+		/datum/experiment/scanning/points/Chicken = 840,
+		/datum/experiment/scanning/points/Cockroach = 840,
+		/datum/experiment/scanning/points/Frog = 840,
+		/datum/experiment/scanning/points/BlobSpore = 840,
+		/datum/experiment/scanning/points/Cow = 1680,
+		/datum/experiment/scanning/points/Cat = 1680,
+		/datum/experiment/scanning/points/Corgi = 1680,
+		/datum/experiment/scanning/points/SpaceCarp = 1680,
+		/datum/experiment/scanning/points/QueenBee = 1680,
+		/datum/experiment/scanning/points/MegaSpaceCarp = 2520,
+		/datum/experiment/scanning/points/MegaArachnid = 2520,
+		/datum/experiment/scanning/points/GelatinousCube = 2520,
+		/datum/experiment/scanning/points/SholeanGrapes = 2520,
+		/datum/experiment/scanning/points/Leaper = 3360,
+		/datum/experiment/scanning/points/VatBeast = 3360,
+		)
+/datum/techweb_node/reagentholding
+	id = "reagentholding"
+	prereq_ids = list("porn")
+	display_name = "reagent holding 1"
 	description = "Basic reagent holding"
 	design_ids = list(
 		"beaker",
 		"large_beaker",
 		"syringe"
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
-/datum/techweb_node/reagentholdingb
-	id = "reagentholdingb"
-	prereq_ids = list("reagentholdinga")
-	display_name = "Advanced Reagent Holding Equipment"
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
+	discount_experiments = list(/datum/experiment/scanning/points/Seiver = 250,
+		/datum/experiment/scanning/points/Helbital = 250,
+		/datum/experiment/scanning/points/Calomel = 250,
+		/datum/experiment/scanning/points/Mannitol = 250,
+		/datum/experiment/scanning/points/Oil = 250,
+		/datum/experiment/scanning/points/PotassiumIodide =250,
+		/datum/experiment/scanning/points/Synaptizine = 250,
+		/datum/experiment/scanning/points/SpaceDrugs = 250,
+		/datum/experiment/scanning/points/Cryptobiolin = 250,
+		/datum/experiment/scanning/points/Mutadone = 500,
+		/datum/experiment/scanning/points/Candle = 500,
+		/datum/experiment/scanning/points/Oculine = 500,
+		/datum/experiment/scanning/points/Diphenhydramine = 500,
+		/datum/experiment/scanning/points/Ephedrine = 500,
+		/datum/experiment/scanning/points/Neurine = 500,
+		/datum/experiment/scanning/points/Lidocaine = 500,
+		/datum/experiment/scanning/points/MeatProduct = 500,
+		/datum/experiment/scanning/points/Cryoxadone = 500,
+		/datum/experiment/scanning/points/Lipolicide = 500,
+		/datum/experiment/scanning/points/StrangeReagent =750,
+		/datum/experiment/scanning/points/Epinephrine = 750,
+		/datum/experiment/scanning/points/Modafinil = 750,
+		/datum/experiment/scanning/points/Rotatium = 750,
+		/datum/experiment/scanning/points/BathSalts = 750,)
+/datum/techweb_node/reagentholding1
+	id = "reagentholding1"
+	prereq_ids = list("reagentholding")
+	display_name = "reagent holding 2"
 	description = "i have received equity in bluespace.com. who gives a shit about this node im on to the next."
 	design_ids = list(
 		"xlarge_beaker",
 		"meta_beaker"
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
-/datum/techweb_node/reagentholdingc
-	id = "reagentholdingb"
-	prereq_ids = list("reagentholdingb")
-	display_name = "bluespace.com"
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+		discount_experiments = list(/datum/experiment/scanning/points/Seiver = 250,
+		/datum/experiment/scanning/points/Helbital = 250,
+		/datum/experiment/scanning/points/Calomel = 250,
+		/datum/experiment/scanning/points/Mannitol = 250,
+		/datum/experiment/scanning/points/Oil = 250,
+		/datum/experiment/scanning/points/PotassiumIodide =250,
+		/datum/experiment/scanning/points/Synaptizine = 250,
+		/datum/experiment/scanning/points/SpaceDrugs = 250,
+		/datum/experiment/scanning/points/Cryptobiolin = 250,
+		/datum/experiment/scanning/points/Mutadone = 500,
+		/datum/experiment/scanning/points/Candle = 500,
+		/datum/experiment/scanning/points/Oculine = 500,
+		/datum/experiment/scanning/points/Diphenhydramine = 500,
+		/datum/experiment/scanning/points/Ephedrine = 500,
+		/datum/experiment/scanning/points/Neurine = 500,
+		/datum/experiment/scanning/points/Lidocaine = 500,
+		/datum/experiment/scanning/points/MeatProduct = 500,
+		/datum/experiment/scanning/points/Cryoxadone = 500,
+		/datum/experiment/scanning/points/Lipolicide = 500,
+		/datum/experiment/scanning/points/StrangeReagent =750,
+		/datum/experiment/scanning/points/Epinephrine = 750,
+		/datum/experiment/scanning/points/Modafinil = 750,
+		/datum/experiment/scanning/points/Rotatium = 750,
+		/datum/experiment/scanning/points/BathSalts = 750,)
+/datum/techweb_node/reagentholding2
+	id = "reagentholding2"
+	prereq_ids = list("reagentholding1")
+	display_name = "reagent holding 3"
 	description = "it was a bust but who gives a shit"
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
-	design_ids = list("bluespacesyringe",
-		"bluespacebeaker"
-	)
-/datum/techweb_node/electricitya
-	id = "electricitya"
-	prereq_ids = list("porn")
-	display_name = "electricity level 1"
-	description = "never neglect your bottom dollar bitch. kiss the ring."
-	design_ids = list(
-		"basic_cell",
-		"cell_charger",
-		"solarcontrol",
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+	design_ids = list("piercesyringe",
+		"splitbeaker"
 	)
 	discount_experiments = list(/datum/experiment/scanning/points/Seiver = 250,
 		/datum/experiment/scanning/points/Helbital = 250,
@@ -1204,7 +1376,49 @@
 		/datum/experiment/scanning/points/Modafinil = 750,
 		/datum/experiment/scanning/points/Rotatium = 750,
 		/datum/experiment/scanning/points/BathSalts = 750,)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+/datum/techweb_node/reagentholding3
+	id = "reagentholding3"
+	prereq_ids = list("reagentholding2")
+	display_name = "reagent holding 4"
+	description = "it was a bust but who gives a shit"
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	design_ids = list("bluespacesyringe",
+		"bluespacebeaker"
+	)
+	discount_experiments = list(/datum/experiment/scanning/points/Seiver = 250,
+/datum/techweb_node/electricitya
+	id = "electricitya"
+	prereq_ids = list("porn")
+	display_name = "electricity level 1"
+	description = "never neglect your bottom dollar bitch. kiss the ring."
+	design_ids = list(
+		"basic_cell",
+		"cell_charger",
+		"solarcontrol",
+	)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/GreySlime =700,
+		/datum/experiment/scanning/points/OrangeSlime =700,
+		/datum/experiment/scanning/points/MetalSlime =700,
+		/datum/experiment/scanning/points/PurpleSlime =700,
+		/datum/experiment/scanning/points/BlueSlime =700,
+		/datum/experiment/scanning/points/SilverSlime =1400,
+		/datum/experiment/scanning/points/DarkBlueSlime =1400,
+		/datum/experiment/scanning/points/YellowSlime =1400,
+		/datum/experiment/scanning/points/DarkPurpleSlime =1400,
+		/datum/experiment/scanning/points/GoldSlime =1400,
+		/datum/experiment/scanning/points/PinkSlime =1400,
+		/datum/experiment/scanning/points/GreenSlime =1400,
+		/datum/experiment/scanning/points/RedSlime =1400,
+		/datum/experiment/scanning/points/AdamantineSlime =2100,
+		/datum/experiment/scanning/points/PyriteSlime =2100,
+		/datum/experiment/scanning/points/LightPinkSlime =2100,
+		/datum/experiment/scanning/points/CeruleanSlime =2100,
+		/datum/experiment/scanning/points/BlackSlime =2100,
+		/datum/experiment/scanning/points/SepiaSlime =2100,
+		/datum/experiment/scanning/points/OilSlime =2100,
+		/datum/experiment/scanning/points/BluespaceSlime =2100,)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 /datum/techweb_node/electricityb
 	id = "electricityb"
 	prereq_ids = list("reagentholdingb")
@@ -1220,7 +1434,29 @@
 		"turbine_part_rotor",
 		"turbine_part_stator",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/GreySlime =700,
+		/datum/experiment/scanning/points/OrangeSlime =700,
+		/datum/experiment/scanning/points/MetalSlime =700,
+		/datum/experiment/scanning/points/PurpleSlime =700,
+		/datum/experiment/scanning/points/BlueSlime =700,
+		/datum/experiment/scanning/points/SilverSlime =1400,
+		/datum/experiment/scanning/points/DarkBlueSlime =1400,
+		/datum/experiment/scanning/points/YellowSlime =1400,
+		/datum/experiment/scanning/points/DarkPurpleSlime =1400,
+		/datum/experiment/scanning/points/GoldSlime =1400,
+		/datum/experiment/scanning/points/PinkSlime =1400,
+		/datum/experiment/scanning/points/GreenSlime =1400,
+		/datum/experiment/scanning/points/RedSlime =1400,
+		/datum/experiment/scanning/points/AdamantineSlime =2100,
+		/datum/experiment/scanning/points/PyriteSlime =2100,
+		/datum/experiment/scanning/points/LightPinkSlime =2100,
+		/datum/experiment/scanning/points/CeruleanSlime =2100,
+		/datum/experiment/scanning/points/BlackSlime =2100,
+		/datum/experiment/scanning/points/SepiaSlime =2100,
+		/datum/experiment/scanning/points/OilSlime =2100,
+		/datum/experiment/scanning/points/BluespaceSlime =2100,)
 /datum/techweb_node/electricityc
 	id = "electricityc"
 	prereq_ids = list("reagentholdingb")
@@ -1230,78 +1466,158 @@
 		"super_cell",
 		"recharger"
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-/datum/techweb_node/brped
-	id = "brped"
-	prereq_ids = list("reagentholdingb","electricityb","manip2",)
-	display_name = "brped"
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/GreySlime =700,
+		/datum/experiment/scanning/points/OrangeSlime =700,
+		/datum/experiment/scanning/points/MetalSlime =700,
+		/datum/experiment/scanning/points/PurpleSlime =700,
+		/datum/experiment/scanning/points/BlueSlime =700,
+		/datum/experiment/scanning/points/SilverSlime =1400,
+		/datum/experiment/scanning/points/DarkBlueSlime =1400,
+		/datum/experiment/scanning/points/YellowSlime =1400,
+		/datum/experiment/scanning/points/DarkPurpleSlime =1400,
+		/datum/experiment/scanning/points/GoldSlime =1400,
+		/datum/experiment/scanning/points/PinkSlime =1400,
+		/datum/experiment/scanning/points/GreenSlime =1400,
+		/datum/experiment/scanning/points/RedSlime =1400,
+		/datum/experiment/scanning/points/AdamantineSlime =2100,
+		/datum/experiment/scanning/points/PyriteSlime =2100,
+		/datum/experiment/scanning/points/LightPinkSlime =2100,
+		/datum/experiment/scanning/points/CeruleanSlime =2100,
+		/datum/experiment/scanning/points/BlackSlime =2100,
+		/datum/experiment/scanning/points/SepiaSlime =2100,
+		/datum/experiment/scanning/points/OilSlime =2100,
+		/datum/experiment/scanning/points/BluespaceSlime =2100,)
+/datum/techweb_node/circuit
+	id = "circuit"
+	prereq_ids = list("porn")
+	display_name = "circuits 1"
 	description = "fillout"
 	design_ids = list(
-		"bs_rped"
-	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-/datum/techweb_node/engie
-	id = "engie"
-	prereq_ids = list("bin","laser","manip","scanning","capacitor")
-	display_name = "brped"
-	description = "fillout"
-	design_ids = list(
-		"welding_goggles",
+		"circuit_multitool",
+		"comp_access_checker",
+		"comp_arithmetic",
+		"comp_binary_convert",
+		"comp_clock",
+		"comp_comparison",
+		"comp_decimal_convert",
+		"comp_delay",
+		"comp_direction",
+		"comp_element_find",
+		"comp_foreach",
+		"comp_format",
+		"comp_format_assoc",
+		"comp_get_column",
+		"comp_index",
+		"comp_index_assoc",
+		"comp_index_table",
+		"comp_length",
+		"comp_logic",
+		"comp_module",
+		"comp_multiplexer",
+		"comp_not",
+		"comp_random",
+		"comp_router",
+		"comp_select_query",
+		"comp_self",
+		"comp_set_variable_trigger",
+		"comp_split",
+		"comp_string_contains",
+		"comp_textcase",
+		"comp_timepiece",
+		"comp_tonumber",
+		"comp_tostring",
+		"comp_typecast",
+		"comp_typecheck",
+		"compact_remote_shell",
+		"component_printer",
+		"integrated_circuit",
+		"module_duplicator",
 		"usb_cable",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-/datum/techweb_node/reagentpractical
-	id = "reagentpractical"
-	prereq_ids = list("reagentholdingb")
-	display_name = "reagent but cool!"
-	description = "i really found these fucking stupid but i cant say anything now because i have to pee."
-	design_ids = list(
-		"piercesyringe",
-		"splitbeaker"
-	)
+	discount_experiments = list(
+		/datum/experiment/ordnance/explosive/lowyieldbomb = 1000,
+		/datum/experiment/ordnance/explosive/highyieldbomb = 2000,
+		/datum/experiment/ordnance/explosive/hydrogenbomb = 3000,
+		/datum/experiment/ordnance/explosive/nobliumbomb = 4000,
+		/datum/experiment/ordnance/explosive/pressurebomb = 3000,		
+		)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
-/datum/techweb_node/smallppl
-	id = "smallppl"
-	prereq_ids = list("porn")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-	display_name = "small people know aboutology"
-	description = "the study of takin peeks at little guys. just little fuckin critters."
+/datum/techweb_node/circuit1
+	id = "circuit1"
+	prereq_ids = list("circuit")
+	display_name = "circuits 2"
+	description = "fillout"
 	design_ids = list(
-		"biopsy_tool",
-		"petri_dish",
-		"swab"
+		"comp_list_add",
+		"comp_list_assoc_literal",
+		"comp_list_clear",
+		"comp_list_literal",
+		"comp_list_remove",
+		"comp_filter_list",
+		"comp_concat",
+		"comp_concat_list",
 	)
-/datum/techweb_node/process
-	id = "process"
-	prereq_ids = list("porn")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
-	display_name = "Processing"
-	description = "permission to crungle and scrungle things into other thing"
+	discount_experiments = list(
+		/datum/experiment/ordnance/explosive/lowyieldbomb = 1000,
+		/datum/experiment/ordnance/explosive/highyieldbomb = 2000,
+		/datum/experiment/ordnance/explosive/hydrogenbomb = 3000,
+		/datum/experiment/ordnance/explosive/nobliumbomb = 4000,
+		/datum/experiment/ordnance/explosive/pressurebomb = 3000,		
+		)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+/datum/techweb_node/circuit2
+	id = "circuit2"
+	prereq_ids = list("circuit1")
+	display_name = "circuits 3"
+	description = "fillout"
 	design_ids = list(
-		"gibber",
-		"processor",
-		"reagentgrinder",
-		"monkey_recycler"
+		"comp_trigonometry",
+		"comp_tempsensor",
+		"comp_pinpointer",
+		"comp_pressuresensor",
+		"comp_ntnet_receive",
+		"comp_ntnet_send",
+		"comp_soundemitter",
+		"comp_species",
+		"comp_id_access_reader",
+		"comp_id_getter",
+		"comp_id_info_reader",
 	)
-/datum/techweb_node/plumbing
-	id = "plumbing"
-	prereq_ids = list("reagentholdinga")
-	display_name = "plumbing"
-	description = "ok so tubes. bleep bloop blop. "
+	discount_experiments = list(
+		/datum/experiment/ordnance/explosive/lowyieldbomb = 1000,
+		/datum/experiment/ordnance/explosive/highyieldbomb = 2000,
+		/datum/experiment/ordnance/explosive/hydrogenbomb = 3000,
+		/datum/experiment/ordnance/explosive/nobliumbomb = 4000,
+		/datum/experiment/ordnance/explosive/pressurebomb = 3000,		
+		)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+/datum/techweb_node/circuit3
+	id = "circuit3"
+	prereq_ids = list("circuit2")
+	display_name = "circuits 4"
+	description = "fillout"
 	design_ids = list(
-		"plumbing_rcd",
-		"plumbing_rcd_sci"
+		"comp_gps",
+		"comp_health",
+		"comp_hear",
+		"comp_laserpointer",
+		"comp_matscanner",
+		"comp_mmi",
+		"comp_radio",
+		"comp_reagents",
+		"comp_speech",
+		"comp_view_sensor",
 	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
-/datum/techweb_node/plumbing2
-	id = "plumbing2"
-	prereq_ids = list("plumbing")
-	display_name = "piping"
-	description = "pipes too!"
-	design_ids = list(
-		"rpd_loaded"
-	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+	discount_experiments = list(
+		/datum/experiment/ordnance/explosive/lowyieldbomb = 1000,
+		/datum/experiment/ordnance/explosive/highyieldbomb = 2000,
+		/datum/experiment/ordnance/explosive/hydrogenbomb = 3000,
+		/datum/experiment/ordnance/explosive/nobliumbomb = 4000,
+		/datum/experiment/ordnance/explosive/pressurebomb = 3000,		
+		)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 /datum/techweb_node/manip
 	id = "manip"
 	prereq_ids = list("porn")
@@ -1310,8 +1626,28 @@
 	design_ids = list(
 		"micro_mani",
 		"autolathe",
+		"gibber",
+		"processor",
+		"reagentgrinder",
+		"monkey_recycler"
+		"rped"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Metal = 100,
+		/datum/experiment/scanning/points/Glass = 100,
+		/datum/experiment/scanning/points/Leather = 150,
+		/datum/experiment/scanning/points/Wood = 200,
+		/datum/experiment/scanning/points/Plasma = 500,
+		/datum/experiment/scanning/points/Durathread = 700,
+		/datum/experiment/scanning/points/Gold = 900,
+		/datum/experiment/scanning/points/Silver = 1200,
+		/datum/experiment/scanning/points/Diamond = 1400,
+		/datum/experiment/scanning/points/Uranium = 1600,
+		/datum/experiment/scanning/points/Titanium = 1800,
+		/datum/experiment/scanning/points/MetallicHydrogen = 2000,
+		/datum/experiment/scanning/points/Zaukerite = 2200,
+		)
 /datum/techweb_node/manip1
 	id = "manip1"
 	prereq_ids = list("manip")
@@ -1322,8 +1658,23 @@
 		"conveyor_belt",
 		"conveyor_switch",
 		"recycler"
+		"bs_rped"
 	)
-
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Metal = 100,
+		/datum/experiment/scanning/points/Glass = 100,
+		/datum/experiment/scanning/points/Leather = 150,
+		/datum/experiment/scanning/points/Wood = 200,
+		/datum/experiment/scanning/points/Plasma = 500,
+		/datum/experiment/scanning/points/Durathread = 700,
+		/datum/experiment/scanning/points/Gold = 900,
+		/datum/experiment/scanning/points/Silver = 1200,
+		/datum/experiment/scanning/points/Diamond = 1400,
+		/datum/experiment/scanning/points/Uranium = 1600,
+		/datum/experiment/scanning/points/Titanium = 1800,
+		/datum/experiment/scanning/points/MetallicHydrogen = 2000,
+		/datum/experiment/scanning/points/Zaukerite = 2200,
+		)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 /datum/techweb_node/manip2
 	id = "manip2"
@@ -1336,7 +1687,21 @@
 		"w-recycler",
 		"tank_compressor"
 	)
-
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Metal = 100,
+		/datum/experiment/scanning/points/Glass = 100,
+		/datum/experiment/scanning/points/Leather = 150,
+		/datum/experiment/scanning/points/Wood = 200,
+		/datum/experiment/scanning/points/Plasma = 500,
+		/datum/experiment/scanning/points/Durathread = 700,
+		/datum/experiment/scanning/points/Gold = 900,
+		/datum/experiment/scanning/points/Silver = 1200,
+		/datum/experiment/scanning/points/Diamond = 1400,
+		/datum/experiment/scanning/points/Uranium = 1600,
+		/datum/experiment/scanning/points/Titanium = 1800,
+		/datum/experiment/scanning/points/MetallicHydrogen = 2000,
+		/datum/experiment/scanning/points/Zaukerite = 2200,
+		)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 /datum/techweb_node/manip3
 	id = "manip3"
@@ -1346,7 +1711,21 @@
 	design_ids = list(
 		"femto_mani",
 	)
-
+	discount_experiments = list(
+		/datum/experiment/scanning/points/Metal = 100,
+		/datum/experiment/scanning/points/Glass = 100,
+		/datum/experiment/scanning/points/Leather = 150,
+		/datum/experiment/scanning/points/Wood = 200,
+		/datum/experiment/scanning/points/Plasma = 500,
+		/datum/experiment/scanning/points/Durathread = 700,
+		/datum/experiment/scanning/points/Gold = 900,
+		/datum/experiment/scanning/points/Silver = 1200,
+		/datum/experiment/scanning/points/Diamond = 1400,
+		/datum/experiment/scanning/points/Uranium = 1600,
+		/datum/experiment/scanning/points/Titanium = 1800,
+		/datum/experiment/scanning/points/MetallicHydrogen = 2000,
+		/datum/experiment/scanning/points/Zaukerite = 2200,
+		)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 /datum/techweb_node/laser
 	id = "laser"
@@ -1849,6 +2228,21 @@
 		"basic_capacitor",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
+	discount_experiments = list(/datum/experiment/scanning/points/CrystalFoamGrenade = 1000,
+		/datum/experiment/scanning/points/AmmoniaCrystal = 1000,
+		/datum/experiment/scanning/points/NitrousOxideCrystal = 1000,
+		/datum/experiment/scanning/points/fuelA = 1000,
+		/datum/experiment/scanning/points/crystal = 2000,
+		/datum/experiment/scanning/points/MetallicHydrogen = 2000,
+		/datum/experiment/scanning/points/Nitrium = 2000,
+		/datum/experiment/scanning/points/fuelB = 2000,
+		/datum/experiment/scanning/points/HyperNobliumCrystal = 3000,
+		/datum/experiment/scanning/points/HotIce = 3000,
+		/datum/experiment/scanning/points/HealiumCrystal = 3000,
+		/datum/experiment/scanning/points/fuelC = 3000,
+		/datum/experiment/scanning/points/SupermatterShard=4000,
+		/datum/experiment/scanning/points/Zaukerite = 4000,
+		)
 /datum/techweb_node/capacitor1
 	id = "capacitor1"
 	prereq_ids = list("capacitor")
@@ -1863,6 +2257,21 @@
 		"exoscanner_console",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	discount_experiments = list(/datum/experiment/scanning/points/CrystalFoamGrenade = 1000,
+		/datum/experiment/scanning/points/AmmoniaCrystal = 1000,
+		/datum/experiment/scanning/points/NitrousOxideCrystal = 1000,
+		/datum/experiment/scanning/points/fuelA = 1000,
+		/datum/experiment/scanning/points/crystal = 2000,
+		/datum/experiment/scanning/points/MetallicHydrogen = 2000,
+		/datum/experiment/scanning/points/Nitrium = 2000,
+		/datum/experiment/scanning/points/fuelB = 2000,
+		/datum/experiment/scanning/points/HyperNobliumCrystal = 3000,
+		/datum/experiment/scanning/points/HotIce = 3000,
+		/datum/experiment/scanning/points/HealiumCrystal = 3000,
+		/datum/experiment/scanning/points/fuelC = 3000,
+		/datum/experiment/scanning/points/SupermatterShard=4000,
+		/datum/experiment/scanning/points/Zaukerite = 4000,
+		)	
 /datum/techweb_node/capacitor2
 	id = "capacitor2"
 	prereq_ids = list("capacitor1")
@@ -1873,6 +2282,21 @@
 		"thermomachine",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+	discount_experiments = list(/datum/experiment/scanning/points/CrystalFoamGrenade = 1000,
+		/datum/experiment/scanning/points/AmmoniaCrystal = 1000,
+		/datum/experiment/scanning/points/NitrousOxideCrystal = 1000,
+		/datum/experiment/scanning/points/fuelA = 1000,
+		/datum/experiment/scanning/points/crystal = 2000,
+		/datum/experiment/scanning/points/MetallicHydrogen = 2000,
+		/datum/experiment/scanning/points/Nitrium = 2000,
+		/datum/experiment/scanning/points/fuelB = 2000,
+		/datum/experiment/scanning/points/HyperNobliumCrystal = 3000,
+		/datum/experiment/scanning/points/HotIce = 3000,
+		/datum/experiment/scanning/points/HealiumCrystal = 3000,
+		/datum/experiment/scanning/points/fuelC = 3000,
+		/datum/experiment/scanning/points/SupermatterShard=4000,
+		/datum/experiment/scanning/points/Zaukerite = 4000,
+		)
 /datum/techweb_node/capacitor3
 	id = "capacitor3"
 	prereq_ids = list("capacitor2")
@@ -1882,6 +2306,21 @@
 		"quadratic_capacitor"
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	discount_experiments = list(/datum/experiment/scanning/points/CrystalFoamGrenade = 1000,
+		/datum/experiment/scanning/points/AmmoniaCrystal = 1000,
+		/datum/experiment/scanning/points/NitrousOxideCrystal = 1000,
+		/datum/experiment/scanning/points/fuelA = 1000,
+		/datum/experiment/scanning/points/crystal = 2000,
+		/datum/experiment/scanning/points/MetallicHydrogen = 2000,
+		/datum/experiment/scanning/points/Nitrium = 2000,
+		/datum/experiment/scanning/points/fuelB = 2000,
+		/datum/experiment/scanning/points/HyperNobliumCrystal = 3000,
+		/datum/experiment/scanning/points/HotIce = 3000,
+		/datum/experiment/scanning/points/HealiumCrystal = 3000,
+		/datum/experiment/scanning/points/fuelC = 3000,
+		/datum/experiment/scanning/points/SupermatterShard=4000,
+		/datum/experiment/scanning/points/Zaukerite = 4000,
+		)
 /datum/techweb_node/porn
 	id = "porn"
 	prereq_ids = list("base")
@@ -1905,6 +2344,23 @@
 		"wrench",
 		"welding_tool",
 		"wirecutters",
+		"biopsy_tool",
+		"petri_dish",
+		"swab"
+		"rpd_loaded"
+		"plumbing_rcd",
+		"plumbing_rcd_sci"
+		"bonesetter",
+		"cautery",
+		"circular_saw",
+		"scalpel",
+		"retractor",
+		"surgicaldrill",
+		"hemostat",
+		"blood_filter",
+		"surgical_tape",
+		"surgical_drapes",
+		"stethoscope",
 	)
 	starting_node = TRUE
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 12)
