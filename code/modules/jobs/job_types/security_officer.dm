@@ -5,9 +5,15 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_HEAD_OF_SECURITY)
 	faction = FACTION_STATION
+<<<<<<< Updated upstream
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	supervisors = "the Head of Security, and the head of your assigned department (if applicable)"
+=======
+	total_positions = 0 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	spawn_positions = 0 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
+	supervisors = "the head of security, and the head of your assigned department (if applicable)"
+>>>>>>> Stashed changes
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 	exp_requirements = 300

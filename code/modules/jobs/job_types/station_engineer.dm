@@ -4,9 +4,15 @@
 		and wiring damage."
 	department_head = list(JOB_CHIEF_ENGINEER)
 	faction = FACTION_STATION
+<<<<<<< Updated upstream
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = SUPERVISOR_CE
+=======
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "the chief engineer"
+>>>>>>> Stashed changes
 	selection_color = "#fff5cc"
 	exp_requirements = 60
 	exp_required_type = EXP_TYPE_CREW

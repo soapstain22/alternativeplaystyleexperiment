@@ -4,9 +4,15 @@
 		less likable substances in the comfort of a fully reinforced room."
 	department_head = list("Chief Medical Officer")
 	faction = FACTION_STATION
+<<<<<<< Updated upstream
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_CMO
+=======
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "the chief medical officer"
+>>>>>>> Stashed changes
 	selection_color = "#ffeef0"
 	exp_requirements = 60
 	exp_required_type = EXP_TYPE_CREW

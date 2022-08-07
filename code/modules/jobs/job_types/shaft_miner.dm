@@ -4,9 +4,15 @@
 		Meet strange creatures. Kill them for their gold."
 	department_head = list(JOB_QUARTERMASTER)
 	faction = FACTION_STATION
+<<<<<<< Updated upstream
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = SUPERVISOR_QM
+=======
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "the quartermaster"
+>>>>>>> Stashed changes
 	selection_color = "#dcba97"
 	exp_granted_type = EXP_TYPE_CREW
 
