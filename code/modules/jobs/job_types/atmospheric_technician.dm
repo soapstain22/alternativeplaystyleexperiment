@@ -3,11 +3,7 @@
 	description = "Ensure the air is breathable on the station, fill oxygen tanks, fight fires, purify the air."
 	department_head = list(JOB_CHIEF_ENGINEER)
 	faction = FACTION_STATION
-<<<<<<< Updated upstream
-	total_positions = 3
-	spawn_positions = 2
-	supervisors = SUPERVISOR_CE
-=======
+
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the chief engineer"

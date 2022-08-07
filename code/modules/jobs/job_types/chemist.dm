@@ -4,11 +4,7 @@
 		less likable substances in the comfort of a fully reinforced room."
 	department_head = list("Chief Medical Officer")
 	faction = FACTION_STATION
-<<<<<<< Updated upstream
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = SUPERVISOR_CMO
-=======
+
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the chief medical officer"

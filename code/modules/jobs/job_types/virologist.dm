@@ -4,11 +4,8 @@
 		vaccine for them. Engineer beneficial viruses."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
 	faction = FACTION_STATION
-<<<<<<< Updated upstream
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = SUPERVISOR_CMO
-=======
+
+
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the chief medical officer"

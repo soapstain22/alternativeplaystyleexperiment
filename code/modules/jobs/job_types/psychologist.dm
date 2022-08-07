@@ -4,11 +4,7 @@
 		staffed with headcases."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
-<<<<<<< Updated upstream
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Head of Personnel and the Chief Medical Officer"
-=======
+
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the head of personnel and the chief medical officer"

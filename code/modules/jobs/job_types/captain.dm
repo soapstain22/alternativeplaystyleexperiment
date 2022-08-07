@@ -6,11 +6,7 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
 	department_head = list("CentCom")
 	faction = FACTION_STATION
-<<<<<<< Updated upstream
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "Nanotrasen officials and Space Law"
-=======
+
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "Nanotrasen officials and Space law"

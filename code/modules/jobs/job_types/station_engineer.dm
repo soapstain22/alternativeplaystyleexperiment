@@ -4,11 +4,8 @@
 		and wiring damage."
 	department_head = list(JOB_CHIEF_ENGINEER)
 	faction = FACTION_STATION
-<<<<<<< Updated upstream
-	total_positions = 5
-	spawn_positions = 5
-	supervisors = SUPERVISOR_CE
-=======
+
+
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the chief engineer"
