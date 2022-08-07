@@ -8,7 +8,7 @@
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the chief medical officer"
->>>>>>> Stashed changes
+
 	selection_color = "#ffeef0"
 	exp_requirements = 60
 	exp_required_type = EXP_TYPE_CREW

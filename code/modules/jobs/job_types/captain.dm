@@ -10,7 +10,7 @@
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "Nanotrasen officials and Space law"
->>>>>>> Stashed changes
+
 	selection_color = "#ccccff"
 	req_admin_notify = 1
 	minimal_player_age = 14

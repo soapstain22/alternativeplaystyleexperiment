@@ -11,7 +11,7 @@
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the head of personnel"
->>>>>>> Stashed changes
+
 	selection_color = "#bbe291"
 	exp_granted_type = EXP_TYPE_CREW
 

@@ -11,7 +11,7 @@
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the captain"
->>>>>>> Stashed changes
+
 	selection_color = "#ffeeaa"
 	req_admin_notify = 1
 	minimal_player_age = 7

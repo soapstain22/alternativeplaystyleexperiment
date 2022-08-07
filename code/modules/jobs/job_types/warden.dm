@@ -11,7 +11,7 @@
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the head of security"
->>>>>>> Stashed changes
+
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 	exp_requirements = 300
