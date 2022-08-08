@@ -2342,3 +2342,29 @@
 	)
 	starting_node = TRUE
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 12)
+/datum/techweb_node/winner
+	id = "winner"
+	prereq_ids = list("capacitor3","scanning3","bin3","manip3")
+	display_name = "winner"
+	description = "you win!"
+	design_ids = list(
+
+	)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20000)
+	discount_experiments = list(/datum/experiment/scanning/points/CrystalFoamGrenade = 1000,
+		/datum/experiment/scanning/points/AmmoniaCrystal = 1000,
+		/datum/experiment/scanning/points/NitrousOxideCrystal = 1000,
+		/datum/experiment/scanning/points/fuelA = 1000,
+		/datum/experiment/scanning/points/crystal = 2000,
+		/datum/experiment/scanning/points/MetallicHydrogen = 2000,
+		/datum/experiment/scanning/points/Nitrium = 2000,
+		/datum/experiment/scanning/points/fuelB = 2000,
+		/datum/experiment/scanning/points/HyperNobliumCrystal = 3000,
+		/datum/experiment/scanning/points/HotIce = 3000,
+		/datum/experiment/scanning/points/HealiumCrystal = 3000,
+		/datum/experiment/scanning/points/fuelC = 3000,
+		/datum/experiment/scanning/points/SupermatterShard=4000,
+		/datum/experiment/scanning/points/Zaukerite = 4000,
+		)
+/datum/techweb_node/winner/on_research()
+	declare_completion()

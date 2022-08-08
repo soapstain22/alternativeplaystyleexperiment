@@ -1,7 +1,6 @@
 /datum/outfit/standardrun
 	name = "Standard"
-	jobtype = /datum/job/assistant
-	id_trim = /datum/id_trim/job/assistant
+	id_trim = /datum/id_trim/job/captain
 	uniform = /obj/item/clothing/under/color/grey
 	belt = /obj/item/storage/belt/utility/full/engi
 	ears = /obj/item/radio/headset/headset_cent/commander
