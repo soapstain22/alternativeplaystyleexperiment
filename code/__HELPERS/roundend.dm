@@ -769,9 +769,4 @@
 		qdel(query_check_everything_ranks)
 /datum/controller/subsystem/ticker/proc/final_details()
 	var/list/result = list()
-		result += "FINAL TIME:"//newline between teams
-		result += round_start_time
-		result += "total points:"
-		result += total_techweb_points
-		result += "total points:"
 	return result.Join()
