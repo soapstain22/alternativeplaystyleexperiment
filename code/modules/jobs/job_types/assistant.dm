@@ -37,7 +37,8 @@ Assistant
 /datum/outfit/job/assistant
 	name = JOB_ASSISTANT
 	jobtype = /datum/job/assistant
-	id_trim = /datum/id_trim/job/assistant
+	id_trim = /datum/id_trim/job/captain
+
 
 /datum/outfit/job/assistant/pre_equip(mob/living/carbon/human/target)
 	..()
