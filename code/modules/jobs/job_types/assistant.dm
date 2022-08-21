@@ -12,7 +12,7 @@ Assistant
 	supervisors = "absolutely everyone"
 	selection_color = "#dddddd"
 	exp_granted_type = EXP_TYPE_CREW
-	outfit = /datum/outfit/standardrun
+	outfit = /datum/outfit/job/standardrun
 	plasmaman_outfit = /datum/outfit/plasmaman
 
 	paycheck_department = ACCOUNT_CIV
