@@ -4,9 +4,11 @@
 		bookshelves, report on station news."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "the head of personnel"
+
 	selection_color = "#bbe291"
 	exp_granted_type = EXP_TYPE_CREW
 

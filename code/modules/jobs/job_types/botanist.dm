@@ -3,9 +3,10 @@
 	description = "Grow plants for the cook, for medicine, and for recreation."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
-	total_positions = 3
-	spawn_positions = 2
-	supervisors = SUPERVISOR_HOP
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "the head of personnel"
+
 	selection_color = "#bbe291"
 	exp_granted_type = EXP_TYPE_CREW
 

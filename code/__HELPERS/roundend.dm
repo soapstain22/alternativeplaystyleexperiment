@@ -295,25 +295,8 @@
 //Common part of the report
 /datum/controller/subsystem/ticker/proc/build_roundend_report()
 	var/list/parts = list()
-
-	//AI laws
-	parts += law_report()
-
-	CHECK_TICK
-
 	//Antagonists
-	parts += antag_report()
-
-	parts += hardcore_random_report()
-
-	CHECK_TICK
-	//Medals
-	parts += medal_report()
-	//Station Goals
-	parts += goal_report()
-	//Economy & Money
-	parts += market_report()
-
+	parts += final_details()
 	list_clear_nulls(parts)
 
 	return parts.Join()
@@ -784,3 +767,6 @@
 				return
 			qdel(query_update_everything_ranks)
 		qdel(query_check_everything_ranks)
+/datum/controller/subsystem/ticker/proc/final_details()
+	var/list/result = list()
+	return result.Join()

@@ -6,9 +6,12 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_HEAD_OF_SECURITY)
 	faction = FACTION_STATION
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = SUPERVISOR_HOS
+
+
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "the head of security"
+
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 	exp_requirements = 300

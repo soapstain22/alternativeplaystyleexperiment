@@ -6,9 +6,11 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	head_announce = list(RADIO_CHANNEL_MEDICAL)
 	faction = FACTION_STATION
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = SUPERVISOR_CAPTAIN
+
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "the captain"
+
 	selection_color = "#ffddf0"
 	req_admin_notify = 1
 	minimal_player_age = 7

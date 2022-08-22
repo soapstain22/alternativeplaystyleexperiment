@@ -7,14 +7,13 @@ Assistant
 	title = JOB_ASSISTANT
 	description = "Get your space legs, assist people, ask the HoP to give you a job."
 	faction = FACTION_STATION
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "absolutely everyone"
 	selection_color = "#dddddd"
 	exp_granted_type = EXP_TYPE_CREW
-	outfit = /datum/outfit/job/assistant
+	outfit = /datum/outfit/job/standardrun
 	plasmaman_outfit = /datum/outfit/plasmaman
-	paycheck = PAYCHECK_LOWER // Get a job. Job reassignment changes your paycheck now. Get over it.
 
 	paycheck_department = ACCOUNT_CIV
 	display_order = JOB_DISPLAY_ORDER_ASSISTANT
@@ -38,7 +37,8 @@ Assistant
 /datum/outfit/job/assistant
 	name = JOB_ASSISTANT
 	jobtype = /datum/job/assistant
-	id_trim = /datum/id_trim/job/assistant
+	id_trim = /datum/id_trim/job/captain
+
 
 /datum/outfit/job/assistant/pre_equip(mob/living/carbon/human/target)
 	..()
