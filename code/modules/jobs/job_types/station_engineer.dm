@@ -11,7 +11,7 @@
 	supervisors = "the chief engineer"
 
 	selection_color = "#fff5cc"
-	exp_requirements = 60
+	exp_requirements = 1 HOURS
 	exp_required_type = EXP_TYPE_CREW
 	exp_granted_type = EXP_TYPE_CREW
 
